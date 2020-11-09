@@ -1,6 +1,15 @@
+/**using var will allow me to change the colors of all the elements of the page at once if the client changes his mind about the color**/
+:root {--blue:#0065FC}
+
 *,*:before,*:after{box-sizing:border-box}
+
+/**I want to apply this font-family to the whole document, that's why I put it in the body selector**/
 body{font-family:'Raleway', sans-serif}
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-.flexLogoRegister{display:flex;justify-content:space-between;align-items:center}
+
+/**I use flex because it's responsive**/
+.flexLogoRegister{display:flex;justify-content:space-between;align-items:center;padding:10px}
+
+/**styling the logo and register area**/
 .logo{max-width:100px;height:auto}
-.register a{color:#0065FC;text-decoration:none;}
+.register a{color:var(--blue);text-decoration:none;font-weight:bold}
