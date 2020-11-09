@@ -1,0 +1,5 @@
+*,*:before,*:after{box-sizing:border-box}
+body{font-family:'Raleway', sans-serif}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+.logo{max-width:100px;height:auto}
+.register a{color:#0065FC;text-decoration:none;}
