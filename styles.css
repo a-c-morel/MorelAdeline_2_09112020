@@ -14,5 +14,14 @@ body{font-family:'Raleway', sans-serif}
 .logo{max-width:100px;height:auto}
 .register a{color:var(--blue);text-decoration:none;font-weight:bold}
 
-
 .flexNav{list-style:none;display:flex;justify-content:space-around}
+.flexNav li{border-bottom:solid black 2px;padding:10px;width:50%;text-align:center}
+/**
+.flexNav a{text-decoration:none;color:black;}
+.flexNav a:active{color:var(--blue)}
+.flex a:visited{color:black} **/
+
+/**A FAIRE**/
+
+/**relire la docu concernant les attributs qu'on peut donner au sélecteur 'a' : je veux que le lien qui est actif ait la couleur de la var et le trait en dessous aussi**/
+/**Il faudra que l'utilisateur puisse cliquer dans toute la zone des liens hébergement et activités, c'est plus pratique**/
