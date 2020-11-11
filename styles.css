@@ -12,7 +12,7 @@ body{font-family:'Raleway', sans-serif}
 
 /**styling the logo and register area**/
 .logo{max-width:100px;height:auto}
-.register a{color:var(--blue);text-decoration:none;font-weight:bold}
+.register a{color:var(--blue),#0065FC;text-decoration:none;font-weight:bold}
 
 .flexNav{list-style:none;display:flex;justify-content:space-around}
 .flexNav li{border-bottom:solid black 2px;padding:10px;width:50%;text-align:center}
