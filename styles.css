@@ -21,9 +21,10 @@ body{font-family:'Raleway', sans-serif}
 .flexUl li a{color:inherit;text-decoration:none}
 
 @media screen and (min-width:650px){
-    .flexNav{width:40%}
-    .flexUl li{border-bottom:none;justify-content:flex-end;align-items:center}
-    .flexUl li:first-child{border-bottom:none}
+    .flexNav{width:40%;margin-left:auto;}
+    .flexUl{justify-content:flex-end;margin-right:30px}
+    .flexUl li{border-bottom:none;align-items:center;padding:0;width:auto}
+    .flexUl li:first-child{border-bottom:none;padding:0;width:auto;margin-right:30px}
     .register{order:1}
 }
 
