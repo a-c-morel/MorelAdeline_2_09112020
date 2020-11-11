@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-/**using var will allow me to change the colors of all the elements of the page at once if the client changes his mind about the color, but I chose not to use it because it isn't yet accepted by the W3C validator...**/
+/**using var will allow me to change the colors of all the elements of the page at once if the client changes his mind about the color**/
 :root {--blue:#0065FC; --gray:#F2F2F2}
 
 *,*:before,*:after{box-sizing:border-box; margin:0; padding:0}
@@ -20,11 +20,17 @@ body{font-family:'Raleway', sans-serif}
 .flexUl{list-style:none; display:flex; justify-content:space-around}
 .flexUl li{border-bottom:solid var(--gray) 2px; padding:10px; width:50%; text-align:center}
 .flexUl li:first-child{color:var(--blue); border-bottom:solid var(--blue) 2px; padding:10px; width:50%; text-align:center}
-.flexUl li a{color:inherit;text-decoration:none}
+.flexUl li a{color:inherit; text-decoration:none}
 
+.headerH1{font-size:1.4em; margin:30px 50px 10px 15px;}
+.headerH2{font-size:1em; font-weight:normal; margin-left:15px}
 
+/**applying some styles to the input**/
+.citySelector{display: inline-block; padding: 10px 20px; border: 1px solid #dddddd; font-weight:bold; border-radius:25px; width:80%; margin-top:30px; margin-left:40px;}
+
+/**tablets**/
 @media screen and (min-width:650px){
-    .container1{margin-top:0;padding-top:0;align-items:flex-start}
+    .container1{margin-top:0; padding-top:0; align-items:flex-start}
     .logo{margin-top:10px}
     .flexNav{width:40%; margin-left:auto; margin-top:0}
     .flexUl{justify-content:flex-end; margin-right:30px}
@@ -33,14 +39,11 @@ body{font-family:'Raleway', sans-serif}
     .register{order:1}
 }
 
-.headerH1{font-size:1.4em; margin:30px 50px 10px 15px;}
-.headerH2{font-size:1em; font-weight:normal; margin-left:15px}
-
 /**A FAIRE*/
 
-/**trouver comment faire coller le border-top de "Hébergements" au haut de page**/
-
-
-
+/** - ajouter un conteneur dans le html pour le input de sélection de ville, auquel j'appliquerai le border-radius
+    - supprimer le border-radius que j'ai appliqué sur le input
+    - voir comment il faut faire pour ajouter le petit logo avant le input
+    - ajouter un bouton pour pouvoir cliquer sur "entrer"**/
 
 /**Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?**/
