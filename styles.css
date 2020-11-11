@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 /**using var will allow me to change the colors of all the elements of the page at once if the client changes his mind about the color, but I chose not to use it because it isn't yet accepted by the W3C validator...**/
-:root {--blue:#0065FC;--gray:#F2F2F2}
+:root {--blue:#0065FC; --gray:#F2F2F2}
 
 *,*:before,*:after{box-sizing:border-box; margin:0; padding:0}
 
@@ -24,10 +24,12 @@ body{font-family:'Raleway', sans-serif}
 
 
 @media screen and (min-width:650px){
-    .flexNav{width:40%; margin-left:auto}
+    .container1{margin-top:0;padding-top:0;align-items:flex-start}
+    .logo{margin-top:10px}
+    .flexNav{width:40%; margin-left:auto; margin-top:0}
     .flexUl{justify-content:flex-end; margin-right:30px}
-    .flexUl li{border-bottom:none; align-items:center; padding:0; width:auto}
-    .flexUl li:first-child{border-bottom:none; border-top:2px solid var(--blue); padding:0; width:auto; margin-right:30px}
+    .flexUl li{border-bottom:none; align-items:flex-end; padding-top:22px; width:auto;}
+    .flexUl li:first-child{border-bottom:none; border-top:2px solid var(--blue); padding-top:20px; width:auto; margin-right:30px;}
     .register{order:1}
 }
 
@@ -36,7 +38,7 @@ body{font-family:'Raleway', sans-serif}
 
 /**A FAIRE*/
 
-/**trouver comment faire coller le border-top de hébergements au haut de page**/
+/**trouver comment faire coller le border-top de "Hébergements" au haut de page**/
 
 
 
