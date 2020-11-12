@@ -36,7 +36,7 @@ body{font-family:'Raleway', sans-serif}
 .inputBox{display: inline-block; border-radius:15px; width:80vw; margin-top:30px; margin-left:40px; border: 1px solid var(--gray); position:relative;}
 .placeIcon{background-color:var(--gray); padding:16px; border-top-left-radius:15px; border-bottom-left-radius:15px}
 .citySelector{border:none; font-weight:bold; font-size:1em; width:69%; padding-top:15px; padding-bottom:15px}
-.searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:15px 16px 15px 16px; color:white; position:absolute; right:0}
+.searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0}
 
 /*tablets*/
 @media screen and (min-width:650px){
