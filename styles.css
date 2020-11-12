@@ -26,7 +26,10 @@ body{font-family:'Raleway', sans-serif}
 .headerH2{font-size:1em; font-weight:normal; margin-left:15px}
 
 /**applying some styles to the input**/
-.citySelector{display: inline-block; padding: 10px 20px; border: 1px solid #dddddd; font-weight:bold; border-radius:25px; width:80%; margin-top:30px; margin-left:40px;}
+.inputBox{display: inline-block; border-radius:15px; width:80vw; margin-top:30px; margin-left:40px; border: 1px solid var(--gray);}
+.placeIcon{background-color:var(--gray); padding:16px; border-top-left-radius:15px; border-bottom-left-radius:15px}
+.citySelector{border:none; font-weight:bold; width:80%; padding-top:15px; padding-bottom:15px}
+.searchIcon{border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; z-index:1}
 
 /**tablets**/
 @media screen and (min-width:650px){
@@ -41,9 +44,8 @@ body{font-family:'Raleway', sans-serif}
 
 /**A FAIRE*/
 
-/** - ajouter un conteneur dans le html pour le input de sélection de ville, auquel j'appliquerai le border-radius
-    - supprimer le border-radius que j'ai appliqué sur le input
-    - voir comment il faut faire pour ajouter le petit logo avant le input
-    - ajouter un bouton pour pouvoir cliquer sur "entrer"**/
+/** 
+- trouver comment faire en sorte que les border-top et border-bottom du input touchent les 2 petits logos
+**/
 
 /**Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?**/
