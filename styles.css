@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
-/**using var will allow me to change the colors of all the elements of the page at once if the client changes his mind about the color**/
+/*using var will allow me to change the colors of all the elements of the page at once if the client changes his mind about the color*/
 :root {--blue:#0065FC; --gray:#F2F2F2}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+    font-family:'Raleway', sans-serif;
+  }
 
 *,*:before,*:after{box-sizing:border-box; margin:0; padding:0}
 
-/**I want to apply this font-family to the whole document, that's why I put it in the body selector**/
+/*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
 body{font-family:'Raleway', sans-serif}
 
-/**I use flex because it's responsive**/
+/*I use flex because it's responsive*/
 .container1{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;}
 
-/**styling the logo and register area**/
+/*styling the logo and register area*/
 .logo{max-width:100px; height:auto; margin-top:20px; margin-left:30px}
 .register{margin-top:20px; margin-right:30px}
 .register a{color:var(--blue); text-decoration:none; font-weight:bold}
@@ -25,13 +32,13 @@ body{font-family:'Raleway', sans-serif}
 .headerH1{font-size:1.4em; margin:30px 50px 10px 15px;}
 .headerH2{font-size:1em; font-weight:normal; margin-left:15px}
 
-/**applying some styles to the input**/
-.inputBox{display: inline-block; border-radius:15px; width:80vw; margin-top:30px; margin-left:40px; border: 1px solid var(--gray);}
+/*applying some styles to the input*/
+.inputBox{display: inline-block; border-radius:15px; width:80vw; margin-top:30px; margin-left:40px; border: 1px solid var(--gray); position:relative;}
 .placeIcon{background-color:var(--gray); padding:16px; border-top-left-radius:15px; border-bottom-left-radius:15px}
-.citySelector{border:none; font-weight:bold; width:80%; padding-top:15px; padding-bottom:15px}
-.searchIcon{border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; z-index:1}
+.citySelector{border:none; font-weight:bold; font-size:1em; width:69%; padding-top:15px; padding-bottom:15px}
+.searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:15px 16px 15px 16px; color:white; position:absolute; right:0}
 
-/**tablets**/
+/*tablets*/
 @media screen and (min-width:650px){
     .container1{margin-top:0; padding-top:0; align-items:flex-start}
     .logo{margin-top:10px}
@@ -42,10 +49,10 @@ body{font-family:'Raleway', sans-serif}
     .register{order:1}
 }
 
-/**A FAIRE*/
+/*A FAIRE*/
 
-/** 
+/* 
 - trouver comment faire en sorte que les border-top et border-bottom du input touchent les 2 petits logos
-**/
+*/
 
-/**Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?**/
+/*Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?*/
