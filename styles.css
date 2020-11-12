@@ -45,6 +45,7 @@ body{font-family:'Raleway', sans-serif}
 .filterIcon{padding:16px; background-color:var(--lightblue); border-radius:25px; margin-right:8px; color:var(--blue)}
 
 .infoText{margin-top:20px; margin-left:15px}
+.infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
 
 /*tablets*/
 @media screen and (min-width:650px){
@@ -55,7 +56,7 @@ body{font-family:'Raleway', sans-serif}
     .flexUl li{border-bottom:none; align-items:flex-end; padding-top:22px; width:auto;}
     .flexUl li:first-child{border-bottom:none; border-top:2px solid var(--blue); padding-top:20px; width:auto; margin-right:30px;}
     .register{order:1}
-    .inputBox{width:400px;}
+    .inputBox{width:300px;}
 }
 
 /*A FAIRE*/
