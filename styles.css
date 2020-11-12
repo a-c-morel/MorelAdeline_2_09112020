@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
 /*using var will allow me to change the colors of all the elements of the page at once if the client changes his mind about the color*/
-:root {--blue:#0065FC; --gray:#F2F2F2}
+:root {--blue:#0065FC; --gray:#F2F2F2; --lightblue:#DEEBFF}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
@@ -29,7 +29,7 @@ body{font-family:'Raleway', sans-serif}
 .flexUl li:first-child{color:var(--blue); border-bottom:solid var(--blue) 2px; padding:10px; width:50%; text-align:center}
 .flexUl li a{color:inherit; text-decoration:none}
 
-.headerH1{font-size:1.4em; margin:30px 50px 10px 15px;}
+.headerH1{font-size:1.4em; margin:30px 50px 10px 15px}
 .headerH2{font-size:1em; font-weight:normal; margin-left:15px}
 
 /*applying some styles to the input*/
@@ -37,6 +37,14 @@ body{font-family:'Raleway', sans-serif}
 .placeIcon{background-color:var(--gray); padding:16px; border-top-left-radius:15px; border-bottom-left-radius:15px}
 .citySelector{border:none; font-weight:bold; font-size:1em; width:69%; padding-top:15px; padding-bottom:15px}
 .searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0}
+
+.filtersTitle{font-size:1em; font-weight:bold; margin:30px 50px 10px 15px}
+
+.container2{display:flex; align-items:center; flex-wrap:wrap; margin-left:15px}
+.filterButton{background-color:white; border:solid var(--gray) 2px; border-radius:25px; padding-right:16px; margin-right:10px; margin-bottom:10px}
+.filterIcon{padding:16px; background-color:var(--lightblue); border-radius:25px; margin-right:8px; color:var(--blue)}
+
+.infoText{margin-top:20px; margin-left:15px}
 
 /*tablets*/
 @media screen and (min-width:650px){
