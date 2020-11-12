@@ -37,17 +37,26 @@ body{font-family:'Raleway', sans-serif}
 .placeIcon{background-color:var(--gray); padding:16px; border-top-left-radius:15px; border-bottom-left-radius:15px}
 .citySelector{border:none; font-weight:bold; font-size:1em; width:69%; padding-top:15px; padding-bottom:15px}
 .searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0}
+.searchText{display:none}
 
+/*filters section*/
 .filtersTitle{font-size:1em; font-weight:bold; margin:30px 50px 10px 15px}
 
 .container2{display:flex; align-items:center; flex-wrap:wrap; margin-left:15px}
 .filterButton{background-color:white; border:solid var(--gray) 2px; border-radius:25px; padding-right:16px; margin-right:10px; margin-bottom:10px}
 .filterIcon{padding:16px; background-color:var(--lightblue); border-radius:25px; margin-right:8px; color:var(--blue)}
 
+/*info about the city*/
 .infoText{margin-top:20px; margin-left:15px}
 .infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
 
 /*tablets*/
+@media screen and (min-width:380px){
+  .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1em; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
+  .searchIcon{display:none}
+  .inputBox{width:350px;}
+}
+
 @media screen and (min-width:650px){
     .container1{margin-top:0; padding-top:0; align-items:flex-start}
     .logo{margin-top:10px}
@@ -56,8 +65,8 @@ body{font-family:'Raleway', sans-serif}
     .flexUl li{border-bottom:none; align-items:flex-end; padding-top:22px; width:auto;}
     .flexUl li:first-child{border-bottom:none; border-top:2px solid var(--blue); padding-top:20px; width:auto; margin-right:30px;}
     .register{order:1}
-    .inputBox{width:300px;}
 }
+
 
 /*A FAIRE*/
 
