@@ -55,6 +55,7 @@ body{font-family:'Raleway', sans-serif}
     .flexUl li{border-bottom:none; align-items:flex-end; padding-top:22px; width:auto;}
     .flexUl li:first-child{border-bottom:none; border-top:2px solid var(--blue); padding-top:20px; width:auto; margin-right:30px;}
     .register{order:1}
+    .inputBox{width:400px;}
 }
 
 /*A FAIRE*/
