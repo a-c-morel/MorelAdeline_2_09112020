@@ -60,8 +60,12 @@ body{font-family:'Raleway', sans-serif}
 /*most popular hotels*/
 .container3{padding-top:30px; margin-top:30px; background-color:var(--gray); display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
 .sectionH1{padding-left:15px; font-size:1.4em; align-self:flex-start; margin-bottom:15px}
-.flexCard{width:90vw; display:flex; background-color:white; padding:5px; border-radius:20px; margin-bottom:10px}
-.imgCard{width:160px; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
+.flexCard{width:90vw; height:15vh; display:flex; background-color:white; padding:5px; border-radius:20px; margin-bottom:10px}
+/*Not sure for the moment how to style the images to use the same width and height on all the cards.
+I'll try to use less classes for the imgs (to regroup them in one).*/
+.imgCard1{background-image:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
+.imgCard2{background-image:url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg); background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
+.imgCard3{background-image:url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg); background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
 .infoCard{display:flex; flex-direction:column; justify-content:space-between; margin-left:15px}
 .cardH2{font-size:1em; margin-bottom:.6em}
 .infoCard span{font-size:1em; font-weight:bold}
@@ -102,6 +106,10 @@ body{font-family:'Raleway', sans-serif}
 
 /* 
 - trouver comment faire en sorte que les border-top et border-bottom du input touchent les 2 petits logos
+*/
+
+/*
+Utiliser les Shorthand properties (il faut que je relise la documentation)
 */
 
 /*Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?*/
