@@ -54,11 +54,21 @@ body{font-family:'Raleway', sans-serif}
 .filterIcon{padding:16px; background-color:var(--lightblue); border-radius:25px; margin-right:8px; color:var(--blue)}
 
 /*info about the city*/
-.infoText{margin-top:20px; margin-left:15px}
+.infoText{font-size:1em; margin-top:20px; margin-left:15px}
 .infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
 
+/*most popular hotels*/
+.container3{padding-top:30px; margin-top:30px; background-color:var(--gray); display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
+.sectionH1{padding-left:15px; font-size:1.4em; align-self:flex-start; margin-bottom:15px}
+.flexCard{width:90vw; display:flex; background-color:white; padding:5px; border-radius:20px; margin-bottom:10px}
+.imgCard{width:160px; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
+.infoCard{display:flex; flex-direction:column; justify-content:space-between; margin-left:15px}
+.cardH2{font-size:1em; margin-bottom:.6em}
+.infoCard span{font-size:1em; font-weight:bold}
+.rate{background-color:var(--lightblue)}
+
 /*tablets*/
-@media screen and (min-width:380px){
+@media screen and (min-width:400px){
   .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1em; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
   .searchIcon{display:none}
   .inputBox{width:350px;}
