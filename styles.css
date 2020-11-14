@@ -45,9 +45,10 @@ body{font-family:'Raleway', sans-serif}
 .searchText{display:none}
 
 /*filters section*/
-.filtersTitle{font-size:1em; font-weight:bold; margin:30px 50px 10px 15px}
+.container2{display:flex; flex-direction:column; margin-top:30px; margin-left:15px}
+.filtersTitle{font-size:1em; font-weight:bold; margin-bottom:20px}
 
-.container2{display:flex; align-items:center; flex-wrap:wrap; margin-left:15px}
+.filtersFlex{display:flex; align-items:center; flex-wrap:wrap; margin-left:15px}
 .filterButton{background-color:white; border:solid var(--gray) 2px; border-radius:25px; padding-right:16px; margin-right:10px; margin-bottom:10px; cursor:pointer}
 .filterIcon{padding:16px; background-color:var(--lightblue); border-radius:25px; margin-right:8px; color:var(--blue)}
 
@@ -71,9 +72,12 @@ body{font-family:'Raleway', sans-serif}
     .flexNav button a{color:inherit; text-decoration:none}
     .register{order:1}
 }
-/*.flexUl{justify-content:flex-end; margin-right:30px}
-    .flexUl li{border-bottom:none; align-items:flex-end; padding-top:22px; width:auto;}
-    .flexUl li:first-child{border-bottom:none; border-top:2px solid var(--blue); padding-top:20px; width:auto; margin-right:30px;}*/
+
+@media screen and (min-width:750px){
+  .container2{flex-direction:row;align-items:center}
+  .filtersTitle{margin-bottom:0}
+  .filterButton{margin-bottom:0}
+}
 
 /*experimentations on hover effects for desktop*/
 @media screen and (min-width:1025px){
