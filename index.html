@@ -9,62 +9,63 @@
 </head>
 <body>
     <header>
-        <div class="container1">
-            <div><img src="images/logo/Reservia@3x.png" alt="logo Reservia" class="logo"></div>
-            <div class="register"><a href="">S'inscrire</a></div>
-            <nav class="flexNav">            
-                <button><a href="#">Hébergements</a></button>
-                <button><a href="#">Activités</a></button>
+        <div class="container1 flexCenterWrap">
+            <div><img src="images/logo/Reservia@3x.png" alt="logo Reservia" class="logo marginTopMedium"></div>
+            <div class="register marginTopMedium"><a href="">S'inscrire</a></div>
+            <nav class="flexNav marginTopMedium">            
+                <button class="whiteBackground"><a href="#">Hébergements</a></button>
+                <button class="whiteBackground"><a href="#">Activités</a></button>
             </nav>
         </div>
-        <h1 class="headerH1">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2 class="headerH2">En plein centre ville ou en pleine nature</h2>
-        <form class="inputBox" action="#">
+        <h1 class="headerH1 marginTopLarge marginBottomSmall marginLeft">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2 class="headerH2 marginLeft">En plein centre ville ou en pleine nature</h2>
+        <form class="inputBox marginTopLarge" action="#">
             <i class="fas fa-map-marker-alt placeIcon"></i>
-            <input type="text" placeholder="Marseille, France" class="citySelector">
+            <input type="text" placeholder="Marseille, France" class="citySelector bold1">
             <button type="submit" class="searchText">Rechercher</button>
             <button type="submit" class="searchIcon"><i class="fas fa-search"></i></button>
         </form>
         
-        <div class="container2">
-            <h1 class="filtersTitle">Filtres</h1>
-            <div class="filtersFlex">
-                <button class="filterButton"><i class="fas fa-money-bill-wave filterIcon"></i>Economique</button>
-                <button class="filterButton"><i class="fas fa-child filterIcon"></i>Familial</button>
-                <button class="filterButton"><i class="fas fa-heart filterIcon"></i>Romantique</button>
-                <button class="filterButton"><i class="fas fa-dog filterIcon"></i>Animaux autorisés</button> 
+        <div class="container2 marginTopLarge marginLeft">
+            <h1 class="filtersTitle bold1">Filtres</h1>
+            <div class="flexCenterWrap marginLeft">
+                <button class="filterButton marginBottomSmall whiteBackground"><i class="fas fa-money-bill-wave filterIcon"></i>Economique</button>
+                <button class="filterButton marginBottomSmall whiteBackground"><i class="fas fa-child filterIcon"></i>Familial</button>
+                <button class="filterButton marginBottomSmall whiteBackground"><i class="fas fa-heart filterIcon"></i>Romantique</button>
+                <button class="filterButton marginBottomSmall whiteBackground"><i class="fas fa-dog filterIcon"></i>Animaux autorisés</button> 
+            <!--I will turn these buttons into links later-->
             </div>
         </div>
        
-            <p class="infoText"><i class="fas fa-info-circle infoIcon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="infoText marginLeft marginTopMedium"><i class="fas fa-info-circle infoIcon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </header>
     <div class="sectionFlex">
         <section class="mostPopular">
-            <div class="container3">
+            <div class="container3 borderRadius marginTopLarge flexCenterWrap flexColumn">
                 <h1 class="sectionH1">Les plus populaires</h1>
-                <div class="flexCard">
-                    <div class="imgBorder imgCard imgCard1"></div>
-                    <div class="infoCard">
+                <div class="cards flexCard borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder imgCard imgCard1 cardBackground1"></div>
+                    <div class="flexColumn infoCard marginLeft">
                         <div><h2 class="cardH2">Hôtel Le soleil du matin</h2>
-                            <p>Nuit à partir de 128<span>€</span></p>
+                            <p>Nuit à partir de 128<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
                 </div>
-                <div class="flexCard">
-                    <div class="imgBorder imgCard imgCard2"></div>
-                    <div class="infoCard">
+                <div class="cards flexCard borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder imgCard imgCard2 cardBackground1"></div>
+                    <div class="flexColumn infoCard marginLeft">
                         <div><h2 class="cardH2">Au coeur de l'eau Chambres d'hôtes</h2>
-                            <p>Nuit à partir de 71<span>€</span></p>
+                            <p>Nuit à partir de 71<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
                 </div>
-                <div class="flexCard">
-                    <div class="imgBorder imgCard imgCard3"></div>
-                    <div class="infoCard">
+                <div class="cards flexCard borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder imgCard imgCard3 cardBackground1"></div>
+                    <div class="flexColumn infoCard marginLeft">
                         <div><h2 class="cardH2">Hôtel Tout bleu et Blanc</h2>
-                            <p>Nuit à partir de 68<span>€</span></p>
+                            <p>Nuit à partir de 68<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
@@ -74,56 +75,56 @@
         <section class="accomodations">
             <h1 class="sectionH1">Hébergements à Marseille</h1>
             <div class="container4">
-                    <div class="flexCard2">
-                    <div class="imgBorder2 imgCardLarge imgCard4"></div>
-                    <div class="infoCard2">
+                    <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder2 imgCardLarge imgCard4 cardBackground2"></div>
+                    <div class="flexColumn infoCard2 marginLeft">
                         <div><h2 class="cardH2">Auberge la Cannebière</h2>
-                            <p>Nuit à partir de 25<span>€</span></p>
+                            <p>Nuit à partir de 25<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
                 </div>
-                <div class="flexCard2">
-                    <div class="imgBorder2 imgCardLarge imgCard5"></div>
-                    <div class="infoCard2">
+                <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder2 imgCardLarge imgCard5 cardBackground2"></div>
+                    <div class="flexColumn infoCard2 marginLeft">
                         <div><h2 class="cardH2">Hôtel du port</h2>
-                            <p>Nuit à partir de 52<span>€</span></p>
+                            <p>Nuit à partir de 52<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
                 </div>
-                <div class="flexCard2">
-                    <div class="imgBorder2 imgCardLarge imgCard6"></div>
-                    <div class="infoCard2">
+                <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder2 imgCardLarge imgCard6 cardBackground2"></div>
+                    <div class="flexColumn infoCard2 marginLeft">
                         <div><h2 class="cardH2">Hôtel Les mouettes</h2>
-                            <p>Nuit à partir de 76<span>€</span></p>
+                            <p>Nuit à partir de 76<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
                 </div>
-                <div class="flexCard2">
-                    <div class="imgBorder2 imgCardLarge imgCard7"></div>
-                    <div class="infoCard2">
+                <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder2 imgCardLarge imgCard7 cardBackground2"></div>
+                    <div class="flexColumn infoCard2 marginLeft">
                         <div><h2 class="cardH2">Hôtel de la mer</h2>
-                            <p>Nuit à partir de 46<span>€</span></p>
+                            <p>Nuit à partir de 46<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
                 </div>
-                <div class="flexCard2">
-                    <div class="imgBorder2 imgCardLarge imgCard8"></div>
-                    <div class="infoCard2">
+                <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder2 imgCardLarge imgCard8 cardBackground2"></div>
+                    <div class="flexColumn infoCard2 marginLeft">
                         <div><h2 class="cardH2">Hôtel Le Panier</h2>
-                            <p>Nuit à partir de 23<span>€</span></p>
+                            <p>Nuit à partir de 23<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
                 </div>
-                <div class="flexCard2">
-                    <div class="imgBorder2 imgCardLarge imgCard9"></div>
-                    <div class="infoCard2">
+                <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
+                    <div class="imgBorder2 imgCardLarge imgCard9 cardBackground2"></div>
+                    <div class="flexColumn infoCard2 marginLeft">
                         <div><h2 class="cardH2">Hôtel chez Amina</h2>
-                            <p>Nuit à partir de 96<span>€</span></p>
+                            <p>Nuit à partir de 96<span class="bold1">€</span></p>
                         </div>
                         <div class="rate">(étoiles)</div><!--div for the blue stars-->
                     </div>
@@ -132,5 +133,9 @@
             </div>
         </section>
     </div>
+
+<!--A FAIRE:
+- vérifier si je peux trouver des balises sémantiques plus pertinentes
+-->
 </body>
 </html>
