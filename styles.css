@@ -58,24 +58,37 @@ body{font-family:'Raleway', sans-serif}
 .infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
 
 /*most popular hotels*/
-.container3{padding-top:30px; margin-top:30px; background-color:var(--gray); display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
+.container3{padding-top:30px; padding-bottom:30px; margin-top:30px; background-color:var(--gray); display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
 .sectionH1{padding-left:15px; font-size:1.4em; align-self:flex-start; margin-bottom:15px}
-.flexCard{width:90vw; height:15vh; display:flex; background-color:white; padding:5px; border-radius:20px; margin-bottom:10px}
-/*Not sure for the moment how to style the images to use the same width and height on all the cards.
-I'll try to use less classes for the imgs (to regroup them in one).*/
+.flexCard{width:90vw; height:15vh; display:flex; background-color:white; padding:5px; border-radius:20px; margin-bottom:10px; box-shadow:5px 5px 10px rgb(224, 224, 224)}
+.imgCard{max-width:200px}
 .imgCard1{background-image:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
 .imgCard2{background-image:url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg); background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
 .imgCard3{background-image:url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg); background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
-.infoCard{display:flex; flex-direction:column; justify-content:space-between; margin-left:15px}
+.infoCard{display:flex; flex-direction:column; justify-content:space-between; margin-left:15px; width: 300px}
 .cardH2{font-size:1em; margin-bottom:.6em}
 .infoCard span{font-size:1em; font-weight:bold}
-.rate{background-color:var(--lightblue)}
+.rate{background-color:var(--lightblue); margin-top:10px}
+
+/*accomodations in Marseille*/
+.container4{padding-top:30px; padding-bottom:30px; display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
+.flexCard2{width:90vw; height:20vh; display:flex; flex-direction:column; background-color:white; padding:5px; border-radius:20px; margin-bottom:10px; box-shadow:5px 5px 10px rgb(224, 224, 224)}
+.imgBorder2{border-top-left-radius:20px; border-top-right-radius:20px}
+.imgCardLarge{width:100%; height:400px}
+.imgCard4{background-image:url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg); background-size:cover; background-position:center}
+.imgCard5{background-image:url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg); background-size:cover; background-position:center}
+.imgCard6{background-image:url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg); background-size:cover; background-position:center}
+.imgCard7{background-image:url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg); background-size:cover; background-position:center}
+.imgCard8{background-image:url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg); background-size:cover; background-position:center}
+.imgCard9{background-image:url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg); background-size:cover; background-position:center}
+.infoCard2{display:flex; flex-direction:column; justify-content:space-between; margin-left:15px; padding-top:5px; border-bottom-left-radius:20px; border-bottom-right-radius:20px}
 
 /*tablets*/
 @media screen and (min-width:400px){
   .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1em; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
   .searchIcon{display:none}
   .inputBox{width:350px;}
+  .imgCard3{background-position: bottom}
 }
 
 @media screen and (min-width:650px){
@@ -94,22 +107,26 @@ I'll try to use less classes for the imgs (to regroup them in one).*/
   .filterButton{margin-bottom:0}
 }
 
-/*experimentations on hover effects for desktop*/
+/*desktop*/
 @media screen and (min-width:1025px){
   .flexNav button{transition: all 0.5s ease;}
   .flexNav button:hover{background:var(--gray)}
   .flexNav button:first-child{transition: all 0.5s ease;}
   .flexNav button:first-child:hover{background:var(--lightblue)}
+  .sectionFlex{display:flex; justify-content:space-around}
+  .mostPopular{order:1}
+  .container3{border-radius:20px}
+  .accomodations{margin-top:30px; padding-top:30px; background-color:var(--gray); border-radius:20px}
+  .container4{flex-direction:row; flex-wrap:wrap; justify-content:center; width:48vw}
+  .flexCard{width:90%; margin-bottom:20px}
+  .flexCard2{width:20vw; margin-bottom:20px; margin-right:20px}
 }
 
 /*A FAIRE*/
 
-/* 
-- trouver comment faire en sorte que les border-top et border-bottom du input touchent les 2 petits logos
-*/
-
-/*
-Utiliser les Shorthand properties (il faut que je relise la documentation)
+/*réduire au max mon code :
+-rassembler les classes qui font doublon, supprimer les classes inutiles,...)
+-utiliser les Shorthand properties (il faut que je relise la documentation)
 */
 
 /*Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?*/
