@@ -26,6 +26,7 @@ body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to th
 .cards{padding:5px; box-shadow:5px 5px 10px rgb(224, 224, 224)}
 .cardBackground1{background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
 .cardBackground2{background-size:cover; background-position:center}
+.clickableCard{text-decoration:none; color:inherit}
 
 .container1{justify-content:space-between}
 
