@@ -160,9 +160,9 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 
 /*A FAIRE*/
 
-/*réduire au max mon code :
--rassembler les classes qui font doublon, supprimer les classes inutiles,...)
--utiliser les Shorthand properties (il faut que je relise la documentation)
+/*
+-vérifier mon code avec les validateurs
+-réparer les erreurs que j'ai créées en rassemblant certaines propriétés sous des classes globales
 */
 
 /*Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?*/
