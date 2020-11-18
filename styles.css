@@ -25,7 +25,7 @@ body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to th
 .bold1{font-weight:bold; font-size:1em}
 .cards{padding:5px; box-shadow:5px 5px 10px rgb(224, 224, 224)}
 .cardBackground1{background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
-.cardBackground2{background-size:cover; background-position:center}
+.cardBackground2{background-size:cover; background-position:center; height:100px}
 .clickableCard{text-decoration:none; color:inherit}
 
 .container1{justify-content:space-between}
@@ -37,7 +37,7 @@ body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to th
 
 /*NAV*/
 header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work with the media queries*/
-.flexNav{width:100%; list-style:none}
+.flexNav{width:100%; list-style:none; display:flex}
 
 .flexNav li{border:none; border-bottom:solid var(--gray) 2px; padding:10px; text-align:center; width:49vw}
 .flexNav li:first-child{color:var(--blue); border:none; border-bottom:solid var(--blue) 2px; padding:10px; text-align:center}
@@ -68,9 +68,10 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 .infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
 
 /*MOST POPULAR HOTELS*/
-.container3{padding-top:30px; padding-bottom:30px; background-color:var(--gray)}
+.container3{padding-top:30px; padding-bottom:30px; background-color:var(--gray); display:flex; flex-direction:column; align-items:flex-start}
 .sectionH1{padding-left:15px; font-size:1.4em; align-self:flex-start; margin-bottom:15px}
-.flexCard{width:90vw; height:15vh; display:flex}
+.flexCards{display:flex; flex-direction:column; flex-wrap:wrap; margin-left:15px; align-items:flex-start; justify-content:space-around}
+.flexCard{width:90vw; max-width:403px; height:15vh; display:flex}
 .imgCard{max-width:200px}
 .imgCard1{background-image:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg)}
 .imgCard2{background-image:url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg)}
@@ -81,9 +82,9 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 
 /*ACCOMODATIONS IN MARSEILLE*/
 .container4{padding-top:30px; padding-bottom:30px; display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
-.flexCard2{width:90vw; height:20vh}
+.flexCard2{width:90vw; height:25vh}
 .imgBorder2{border-top-left-radius:20px; border-top-right-radius:20px}
-.imgCardLarge{width:100%; height:400px}
+.imgCardLarge{width:100%}
 .imgCard4{background-image:url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg)}
 .imgCard5{background-image:url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg)}
 .imgCard6{background-image:url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg)}
@@ -92,12 +93,32 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 .imgCard9{background-image:url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg)}
 .infoCard2{display:flex; justify-content:space-between; padding-top:5px; border-bottom-left-radius:20px; border-bottom-right-radius:20px}
 
+/*PHONES*/
+@media screen and (min-width:360xpx){
+  .cardBackground2{height:150px}
+}
+
 /*TABLETS*/
 @media screen and (min-width:400px){
   .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1em; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
   .searchIcon{display:none}
   .inputBox{width:350px;}
   .imgCard3{background-position: bottom}
+}
+
+@media screen and (min-width:450px){
+  .container3{align-items:center}
+  .sectionH1{align-self:center}
+  .flexCards{align-items:center}
+}
+
+@media screen and (min-width:470px){
+  .cardBackground2{height:200px}
+}
+
+@media screen and (min-width:530px){
+  .container4{flex-direction:row; width:100vw}
+  .flexCard2{width:45vw; height:25vh; justify-content:space-around; margin-left:15px; margin-right:5px}
 }
 
 @media screen and (min-width:650px){
@@ -118,6 +139,10 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
   .filterButton{margin-bottom:0}
 }
 
+@media screen and (min-width:935px){
+  .{flex-direction:row}
+}
+
 /*DESKTOP*/
 @media screen and (min-width:1025px){
   .flexNav li{transition: all 0.5s ease;}
@@ -125,7 +150,7 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
   .flexNav li:first-child{transition: all 0.5s ease;}
   .flexNav li:first-child:hover{background:var(--lightblue)}
   .sectionFlex{display:flex; justify-content:space-around}
-  .mostPopular{order:1}
+  .mostPopular{order:1; margin-left:15px}
   .container3{border-radius:20px}
   .accomodations{margin-top:30px; padding-top:30px; background-color:var(--gray); border-radius:20px}
   .container4{flex-direction:row; flex-wrap:wrap; justify-content:center; width:48vw}
