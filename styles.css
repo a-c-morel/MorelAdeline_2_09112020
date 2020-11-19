@@ -83,7 +83,10 @@ header{display:flex; flex-direction:column}
 .imgCard3{background-image:url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg)}
 .infoCard{display:flex; justify-content:space-between; width: 300px}
 .cardH2{font-size:1em; margin-bottom:.6em}
-.rate{background-color:var(--lightblue); margin-top:10px}
+.rate{margin-top:10px}
+.stars{font-size:10px}
+.checked{color:var(--blue)}
+.unchecked{color:#c9c9c9}
 
 /*ACCOMODATIONS IN MARSEILLE*/
 .container4{padding-top:30px; padding-bottom:30px; display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
