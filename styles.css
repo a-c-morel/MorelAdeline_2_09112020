@@ -46,12 +46,14 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 .flexNav li a{color:inherit; text-decoration:none}
 /*I will turn these buttons into links later*/
 
+header{display:flex; flex-direction:column}
+
 /*TITLES*/
 .headerH1{font-size:1.4em; margin-right:50px}
 .headerH2{font-size:1em; font-weight:normal}
 
 /*CITY SELECTOR*/
-.inputBox{display: inline-block; border-radius:15px; width:80vw; margin-left:40px; border: 1px solid var(--gray); position:relative;}
+.inputBox{align-self:center; display: inline-block; border-radius:15px; width:90vw; /*margin-left:40px;*/ border: 1px solid var(--gray); position:relative;}
 .placeIcon{background-color:var(--gray); padding:16px; border-top-left-radius:15px; border-bottom-left-radius:15px}
 .citySelector{border:none; width:69%; padding-top:15px; padding-bottom:15px}
 .searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0}
@@ -165,11 +167,13 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 /*A FAIRE*/
 
 /* Objectifs prioritaires
+-coder les étoiles pour afficher la note des hôtels
 -vérifier mon code avec les validateurs
 -réparer les erreurs que j'ai créées quand j'ai voulu rassembler certaines propriétés sous des classes globales
--travailler sur les margin de l'élément de saisie de ville
 -retrouver quelle classe je voulais modifier avec le breakpoint à 935px...
+-coder les breakpoints pour tablette (regarder ce qui est le mieux en fonction de l'orientation)
+-coder les breakpoint pour PC
 */
 
-/*Objectifs secondaires*
+/* Objectifs secondaires
 -Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?*/
