@@ -30,6 +30,8 @@ body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to th
 
 .container1{justify-content:space-between}
 
+header, .sectionH1, .flexCards, .accomodations{margin-left:15px; margin-right:15px}
+
 /*LOGO AND REGISTER*/
 .logo{max-width:100px; height:auto; margin-left:30px; margin-top:0}
 .register{margin-right:30px}
@@ -37,9 +39,9 @@ body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to th
 
 /*NAV*/
 header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work with the media queries*/
-.flexNav{width:100%; list-style:none; display:flex}
+.flexNav{width:100vw; list-style:none; display:flex; margin-left:-15px}
 
-.flexNav li{border:none; border-bottom:solid var(--gray) 2px; padding:10px; text-align:center; width:49vw}
+.flexNav li{border:none; border-bottom:solid var(--gray) 2px; padding:10px; text-align:center; width:50vw}
 .flexNav li:first-child{color:var(--blue); border:none; border-bottom:solid var(--blue) 2px; padding:10px; text-align:center}
 .flexNav li a{color:inherit; text-decoration:none}
 /*I will turn these buttons into links later*/
@@ -69,8 +71,8 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 
 /*MOST POPULAR HOTELS*/
 .container3{padding-top:30px; padding-bottom:30px; background-color:var(--gray); display:flex; flex-direction:column; align-items:flex-start}
-.sectionH1{padding-left:15px; font-size:1.4em; align-self:flex-start; margin-bottom:15px}
-.flexCards{display:flex; flex-direction:column; flex-wrap:wrap; margin-left:15px; align-items:flex-start; justify-content:space-around}
+.sectionH1{font-size:1.4em; align-self:flex-start; margin-bottom:15px}
+.flexCards{display:flex; flex-direction:column; flex-wrap:wrap; align-items:flex-start; justify-content:space-around}
 .flexCard{width:90vw; max-width:403px; height:15vh; display:flex}
 .imgCard{max-width:200px}
 .imgCard1{background-image:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg)}
@@ -118,7 +120,7 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 
 @media screen and (min-width:530px){
   .container4{flex-direction:row; width:100vw}
-  .flexCard2{width:45vw; height:25vh; justify-content:space-around; margin-left:15px; margin-right:5px}
+  .flexCard2{width:45vw; height:25vh; justify-content:space-around; /*margin-left:15px;*/ margin-right:5px}
 }
 
 @media screen and (min-width:650px){
@@ -150,7 +152,7 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
   .flexNav li:first-child{transition: all 0.5s ease;}
   .flexNav li:first-child:hover{background:var(--lightblue)}
   .sectionFlex{display:flex; justify-content:space-around}
-  .mostPopular{order:1; margin-left:15px}
+  .mostPopular{order:1; /*margin-left:15px*/}
   .container3{border-radius:20px}
   .accomodations{margin-top:30px; padding-top:30px; background-color:var(--gray); border-radius:20px}
   .container4{flex-direction:row; flex-wrap:wrap; justify-content:center; width:48vw}
