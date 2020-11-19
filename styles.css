@@ -147,6 +147,9 @@ header{display:flex; flex-direction:column}
   .filterButton{margin-bottom:0}
 }
 
+@media screen and (min-width:900px){
+  .inputBox{align-self:flex-start}
+}
 /*
 @media screen and (min-width:935px){
   .{flex-direction:row}
@@ -170,7 +173,8 @@ header{display:flex; flex-direction:column}
 /*A FAIRE*/
 
 /* Objectifs prioritaires
--coder les étoiles pour afficher la note des hôtels
+-quand la barre de recherche atteint l'extrémité droite du texte, la décentrer et la remettre en flex-start
+(pour les formats tablette et PC)
 -vérifier mon code avec les validateurs
 -réparer les erreurs que j'ai créées quand j'ai voulu rassembler certaines propriétés sous des classes globales
 -retrouver quelle classe je voulais modifier avec le breakpoint à 935px...
