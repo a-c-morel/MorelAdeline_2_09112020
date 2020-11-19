@@ -56,6 +56,7 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 .citySelector{border:none; width:69%; padding-top:15px; padding-bottom:15px}
 .searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0}
 .searchText{display:none}
+/*pb à réparer : il semblerait que l'élément soit décalé vers la droite : vérifier les valeurs des margin*/
 
 /*FILTERS*/
 .container2{display:flex; flex-direction:column} /*careful not to use flexColumn and flexCenterWrap for the filters ! it would impact the other elements with these classes*/
@@ -96,7 +97,7 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 .infoCard2{display:flex; justify-content:space-between; padding-top:5px; border-bottom-left-radius:20px; border-bottom-right-radius:20px}
 
 /*PHONES*/
-@media screen and (min-width:360xpx){
+@media screen and (min-width:360px){
   .cardBackground2{height:150px}
 }
 
@@ -141,9 +142,10 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
   .filterButton{margin-bottom:0}
 }
 
+/*
 @media screen and (min-width:935px){
   .{flex-direction:row}
-}
+} -> je voulais sans doute modifier une classe mais je ne sais plus laquelle... à retrouver !*/
 
 /*DESKTOP*/
 @media screen and (min-width:1025px){
@@ -162,9 +164,12 @@ header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work
 
 /*A FAIRE*/
 
-/*
+/* Objectifs prioritaires
 -vérifier mon code avec les validateurs
--réparer les erreurs que j'ai créées en rassemblant certaines propriétés sous des classes globales
+-réparer les erreurs que j'ai créées quand j'ai voulu rassembler certaines propriétés sous des classes globales
+-travailler sur les margin de l'élément de saisie de ville
+-retrouver quelle classe je voulais modifier avec le breakpoint à 935px...
 */
 
-/*Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?*/
+/*Objectifs secondaires*
+-Faire en sorte que l'utilisateur puisse cliquer dans le padding autour des liens de la nav ?*/
