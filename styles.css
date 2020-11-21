@@ -13,8 +13,94 @@
 
 body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
 
+header, section{padding-top:2em; padding-bottom:2em}
+section{padding-left:1em; padding-right:1em}
+.mostPopular, footer{background-color:var(--gray)}
+.logo, .register{margin-bottom:1em}
+nav, h1 ~ p, form, h2 {margin-bottom:1.5em}
+
+header{display:flex; flex-direction:column; justify-content:space-around; padding-top:2em}
+nav{display:flex; justify-content:space-between; flex-wrap:wrap}
+footer{padding-left:1em; padding-right:1em; padding-top:2em; padding-bottom:2em}
+h1{font-size:1.4em}
+ul{list-style:none}
+a{text-decoration:none; color:#000000}
+
+footer nav{display:flex; flex-direction:column}
+footer ul{padding-bottom:2em}
+footer ul:last-child{padding-bottom:0}
+
+/*LOGO, REGISTER, NAVIGATION*/
+.logo{max-width:100px; height:auto; margin-left:1em; margin-top:-1em} /*margin-left:30px; margin-top:0*/
+.register{margin-right:1em}
+.register a{color:var(--blue); font-weight:bold}
+.title{margin-left:1em; margin-right:1em}
+.infoText{font-size:1em; margin-left:1em; margin-right:1em; width:100%}
+.flexUl{width:100%; display:flex}
+.flexUl li{border:none; border-bottom:solid var(--gray) 2px; padding:10px; text-align:center; width:50vw}
+.flexUl li:first-child{color:var(--blue); border:none; border-bottom:solid var(--blue) 2px; padding:10px; text-align:center}
+
+/*CITY SELECTOR*/
+.inputBox{align-self:center; display: inline-block; border-radius:15px; width:90vw; border: 1px solid var(--gray); position:relative;}
+.placeIcon{background-color:var(--gray); padding:16px; border-top-left-radius:15px; border-bottom-left-radius:15px}
+.citySelector{border:none; width:69%; padding-top:15px; padding-bottom:15px}
+.searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0}
+.searchText{display:none}
+
+/*FILTERS*/
+.filtersContainer{margin-left:1em; display:flex; flex-direction:column}
+.filtersTitle{margin-bottom:.5em}
+.filterButton{border:solid var(--gray) 2px; background-color:#fff; border-radius:25px; padding-right:16px; margin-right:10px; margin-bottom:1em; cursor:pointer}
+.filterIcon{padding:16px; background-color:var(--lightblue); border-radius:25px; margin-right:8px; color:var(--blue)}
+
+.infoText{margin-top:1.5em}
+.infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
+
+/*RATING STARS*/
+.stars{font-size:10px}
+.checked{color:var(--blue)}
+.unchecked{color:#c9c9c9}
+
+@media screen and (min-width:480px){
+  .cardsContainer_Accomodations{display:flex; flex-direction:row; flex-wrap:wrap}
+}
+
+@media screen and (min-width:650px){
+  header{padding-top:0}
+  .logo{padding-top:1.5em}
+  .register{padding-top:21px}
+  nav{flex-direction:row; justify-content:flex-end; width:100vw}
+  .flexUl{margin-left:auto; width:300px}
+  .flexUl li{border:none; padding-top:21px}
+  .flexUl li:first-child{border:none; border-top:solid var(--blue) 2px; padding-top:19px}
+  .register{order:1}
+}
+
+@media screen and (min-width:720px){
+  .sectionsGrid{display:grid;
+    grid-template-columns: 2fr 1fr;
+    height:calc(100vh);
+    grid-template-areas:
+    "accomodations accomodations mostPopular";
+    grid-gap:1em; background-color:white; padding-left:1em; padding-right:1em; position:relative}
+    .mostPopular{grid-area:mostPopular; border-radius:20px}
+    .accomodations{grid-area:accomodations; border-radius:20px; background-color:var(--gray)}
+}
+
+@media screen and (min-width:750px){
+  .filtersContainer{display:flex; flex-direction:row; align-items:center}
+  .filtersTitle{margin-bottom:0; margin-right:.5em}
+  .filterButton{margin-bottom:0}
+
+
+
+
+
+
+
+
 /*generic classes (shapes, colors, structures I can reuse later)*/
-.borderRadius{border-radius:20px}
+/*.borderRadius{border-radius:20px}
 .marginTopLarge{margin-top:30px}
 .marginTopMedium{margin-top:20px}
 .marginBottomSmall{margin-bottom:10px}
@@ -24,53 +110,51 @@ body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to th
 .whiteBackground{background-color:white}
 .bold1{font-weight:bold; font-size:1em}
 .cards{padding:5px; box-shadow:5px 5px 10px rgb(224, 224, 224)}
-.cardBackground1{background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
-.cardBackground2{background-size:cover; background-position:center; height:100px}
+.mostPopular_cardBackground{background-size:cover; background-position:center; width:80%; height: auto; border-top-left-radius:20px; border-bottom-left-radius:20px}
+.accomodations_cardBackground{background-size:cover; background-position:center; height:100px}
 .clickableCard{text-decoration:none; color:inherit}
 
 .container1{justify-content:space-between}
 
-header, .sectionH1, .flexCards, .accomodations{margin-left:15px; margin-right:15px}
+header, .sectionH1, .flexCards, .accomodations{margin-left:15px; margin-right:15px}*/
 
 /*LOGO AND REGISTER*/
-.logo{max-width:100px; height:auto; margin-left:30px; margin-top:0}
-.register{margin-right:30px}
-.register a{color:var(--blue); text-decoration:none; font-weight:bold}
+
+
+
+
+
+
+
+/*.register{margin-right:30px}*/
+/*.register a{color:var(--blue); text-decoration:none; font-weight:bold}*/
 
 /*NAV*/
-header nav{margin-top:30px}/*do not use marginTopLarge on this, it will not work with the media queries*/
-.flexNav{width:100vw; list-style:none; display:flex; margin-left:-15px}
+/*header nav{margin-top:30px}*//*do not use marginTopLarge on this, it will not work with the media queries*/
+/*.flexNav{list-style:none; width:100vw; display:flex; margin-left:-15px} */
 
-.flexNav li{border:none; border-bottom:solid var(--gray) 2px; padding:10px; text-align:center; width:50vw}
-.flexNav li:first-child{color:var(--blue); border:none; border-bottom:solid var(--blue) 2px; padding:10px; text-align:center}
-.flexNav li a{color:inherit; text-decoration:none}
+/*.flexNav li{border:none; border-bottom:solid var(--gray) 2px; padding:10px; text-align:center; width:50vw}*/
+/*.flexNav li:first-child{color:var(--blue); border:none; border-bottom:solid var(--blue) 2px; padding:10px; text-align:center}*/
+/*.flexNav li a{color:inherit; text-decoration:none}*/
 /*I will turn these buttons into links later*/
 
-header{display:flex; flex-direction:column}
+
 
 /*TITLES*/
-.headerH1{font-size:1.4em; margin-right:50px}
-.headerH2{font-size:1em; font-weight:normal}
+/*.headerH1{font-size:1.4em; margin-right:50px}
+.headerH2{font-size:1em; font-weight:normal}*/
 
-/*CITY SELECTOR*/
-.inputBox{align-self:center; display: inline-block; border-radius:15px; width:90vw; /*margin-left:40px;*/ border: 1px solid var(--gray); position:relative;}
-.placeIcon{background-color:var(--gray); padding:16px; border-top-left-radius:15px; border-bottom-left-radius:15px}
-.citySelector{border:none; width:69%; padding-top:15px; padding-bottom:15px}
-.searchIcon{cursor:pointer; border:none; border-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0}
-.searchText{display:none}
+
 /*pb à réparer : il semblerait que l'élément soit décalé vers la droite : vérifier les valeurs des margin*/
 
 /*FILTERS*/
-.container2{display:flex; flex-direction:column} /*careful not to use flexColumn and flexCenterWrap for the filters ! it would impact the other elements with these classes*/
+/*.container2{display:flex; flex-direction:column}*/ /*careful not to use flexColumn and flexCenterWrap for the filters ! it would impact the other elements with these classes*/
 
-.filtersTitle{margin-bottom:20px}
 
-.filterButton{border:solid var(--gray) 2px; border-radius:25px; padding-right:16px; margin-right:10px; cursor:pointer}
-.filterIcon{padding:16px; background-color:var(--lightblue); border-radius:25px; margin-right:8px; color:var(--blue)}
 
 /*INFO ABOUT THE CITY*/
-.infoText{font-size:1em}
-.infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
+/*.infoText{font-size:1em}*/
+
 
 /*MOST POPULAR HOTELS*/
 .container3{padding-bottom:30px; background-color:var(--gray); display:flex; flex-direction:column; align-items:flex-start}
@@ -83,10 +167,8 @@ header{display:flex; flex-direction:column}
 .imgCard3{background-image:url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg)}
 .infoCard{display:flex; justify-content:space-between; width: 300px}
 .cardH2{font-size:1em; margin-bottom:.6em}
-.rate{margin-top:10px}
-.stars{font-size:10px}
-.checked{color:var(--blue)}
-.unchecked{color:#c9c9c9}
+/*.rate{margin-top:10px}*/
+
 
 /*ACCOMODATIONS IN MARSEILLE*/
 .container4{padding-bottom:30px; display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
@@ -115,7 +197,7 @@ header{display:flex; flex-direction:column}
 }
 
 @media screen and (min-width:450px){
-  .accomodations{display:flex; flex-direction:column}
+  /*.accomodations{display:flex; flex-direction:column}*/
   .container3{align-items:center}
   .sectionH1{align-self:center}
   .flexCards{align-items:center}
@@ -130,23 +212,14 @@ header{display:flex; flex-direction:column}
   .flexCard2{width:45vw; height:25vh; justify-content:space-around; margin-right:5px}
 }
 
-@media screen and (min-width:650px){
-    .container1{margin-top:0; padding-top:0; justify-content:flex-end; align-items:center; flex-wrap:nowrap; width:100vw}
-    .logo{margin-top:10px}
-    .headerNav{margin-top:0; align-self:flex-start; margin-left:auto}
-    .flexNav{display:flex; margin-top:0; margin-left:auto; width:300px}
-    .flexNav li{border:none; padding-top:21px} /* width:150px; padding-top:30px; padding-bottom:22px*/
-    .flexNav li:first-child{border:none; border-top:solid var(--blue) 2px; padding-top:19px}
-    .flexNav li a{color:inherit; text-decoration:none}
-    .register{order:1}
-}
 
-@media screen and (min-width:750px){
-  /*careful not to use flexColumn and flexCenterWrap for the filters ! it would impact the other elements with these classes*/
+
+/*@media screen and (min-width:750px){
+  careful not to use flexColumn and flexCenterWrap for the filters ! it would impact the other elements with these classes
   .container2{display:flex; flex-direction:row; align-items:center}
   .filtersTitle{margin-bottom:0}
   .filterButton{margin-bottom:0}
-}
+}*/
 
 @media screen and (min-width:900px){
   .inputBox{align-self:flex-start; margin-left:10px}
@@ -171,11 +244,11 @@ header{display:flex; flex-direction:column}
     grid-template-areas:
     "accomodations accomodations mostPopular";
     grid-gap:15px; background-color:red; width:99vw; margin-top:30px; position:relative}
-  .accomodations{background-color:var(--gray); grid-area:accomodations; border-radius:20px; padding-left:0; margin-left:30px; margin-right:15px}
+  /*.accomodations{background-color:var(--gray); grid-area:accomodations; border-radius:20px; padding-left:0; margin-left:30px; margin-right:15px}*/
   .container4{justify-content:space-around; flex-wrap:wrap; width:auto; height:auto; padding-left:0; margin-left:0}
   .flexCard{width:100%}
   .flexCard2{width:200px; margin-right:30px}
-  .mostPopular{margin-top:-30px; width:100%}
+  /*.mostPopular{margin-top:-30px; width:100%}*/
   .container3{grid-area:mostPopular; border-radius:20px; height:calc(100vh); padding-left:0}
   /*.mostPopular{order:1; width:32vw; margin-right:auto}
   .container3{border-radius:20px}
