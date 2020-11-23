@@ -23,19 +23,25 @@ header{display:flex; flex-direction:column; justify-content:space-around; paddin
 nav{display:flex; justify-content:space-between; flex-wrap:wrap}
 footer{padding-left:1em; padding-right:1em; padding-top:2em; padding-bottom:2em}
 h1{font-size:1.4em}
+h2{font-size:1em}
 ul{list-style:none}
 a{text-decoration:none; color:#000000}
+span{font-weight:bold}
+
+.sectionTitle{font-size:1.4em}
+.mostPopularTitle{display:flex; justify-content:space-between}
+.mostPopular_icon{margin-top:.4em}
 
 footer nav{display:flex; flex-direction:column}
-footer ul{padding-bottom:2em}
-footer ul:last-child{padding-bottom:0}
+footer div{padding-bottom:2em}
+footer div:last-child{padding-bottom:0}
 
 /*LOGO, REGISTER, NAVIGATION*/
 .logo{max-width:100px; height:auto; margin-left:1em; margin-top:-1em} /*margin-left:30px; margin-top:0*/
 .register{margin-right:1em}
 .register a{color:var(--blue); font-weight:bold}
 .title{margin-left:1em; margin-right:1em}
-.infoText{font-size:1em; margin-left:1em; margin-right:1em; width:100%}
+.infoText{font-size:1em; margin-left:1em; margin-right:1em}
 .flexUl{width:100%; display:flex}
 .flexUl li{border:none; border-bottom:solid var(--gray) 2px; padding:10px; text-align:center; width:50vw}
 .flexUl li:first-child{color:var(--blue); border:none; border-bottom:solid var(--blue) 2px; padding:10px; text-align:center}
@@ -57,34 +63,50 @@ footer ul:last-child{padding-bottom:0}
 .infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
 
 /*RATING STARS*/
-.stars{font-size:10px}
+.stars{font-size:10px; margin-bottom:10px}
 .checked{color:var(--blue)}
 .unchecked{color:#c9c9c9}
+
+.card_border{border-radius:20px}
+.cardsContainer_mostPopular{display:flex; flex-direction:column; ; justify-content:space-around; align-items:flex-start}
+.card_info{display:flex; flex-direction:column; justify-content:space-between}
+.mostPopular_card{height:116px; width:288px; display:flex; margin-bottom:1em; background-color:white; padding-top:.2em; padding-left:.2em; padding-bottom:.2em; padding-right:1em}
+.mostPopular_card_img{width:35%; margin-right:1em; height:auto; object-fit:cover; border-top-left-radius:20px; border-bottom-left-radius:20px}
+
+@media screen and (min-width:400px){
+  .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1em; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
+  .searchIcon{display:none}
+  .inputBox{width:350px;}
+}
 
 @media screen and (min-width:480px){
   .cardsContainer_Accomodations{display:flex; flex-direction:row; flex-wrap:wrap}
 }
 
+@media screen and (min-width:640px){
+  .cardsContainer_mostPopular{flex-direction:row; flex-wrap:wrap}
+}
+
 @media screen and (min-width:650px){
   header{padding-top:0}
   .logo{padding-top:1.5em}
-  .register{padding-top:21px}
+  .register{padding-top:21px; margin-right:2em; order:1}
   nav{flex-direction:row; justify-content:flex-end; width:100vw}
   .flexUl{margin-left:auto; width:300px}
   .flexUl li{border:none; padding-top:21px}
   .flexUl li:first-child{border:none; border-top:solid var(--blue) 2px; padding-top:19px}
-  .register{order:1}
 }
 
 @media screen and (min-width:720px){
   .sectionsGrid{display:grid;
     grid-template-columns: 2fr 1fr;
-    height:calc(100vh);
+    height:calc(70vh);
     grid-template-areas:
     "accomodations accomodations mostPopular";
     grid-gap:1em; background-color:white; padding-left:1em; padding-right:1em; position:relative}
     .mostPopular{grid-area:mostPopular; border-radius:20px}
     .accomodations{grid-area:accomodations; border-radius:20px; background-color:var(--gray)}
+    .cardsContainer_mostPopular{flex-direction:column}
 }
 
 @media screen and (min-width:750px){
@@ -92,6 +114,15 @@ footer ul:last-child{padding-bottom:0}
   .filtersTitle{margin-bottom:0; margin-right:.5em}
   .filterButton{margin-bottom:0}
 
+@media screen and (min-width:780px){
+  footer nav{flex-direction:row; justify-content:flex-start}
+  footer nav div{display:flex; flex-direction:column; margin-right:95px}
+  footer div{padding-bottom:0}
+}
+
+@media screen and (min-width:900px){
+  .inputBox{align-self:flex-start; margin-left:10px}
+}
 
 
 
@@ -157,7 +188,7 @@ header, .sectionH1, .flexCards, .accomodations{margin-left:15px; margin-right:15
 
 
 /*MOST POPULAR HOTELS*/
-.container3{padding-bottom:30px; background-color:var(--gray); display:flex; flex-direction:column; align-items:flex-start}
+/*.container3{padding-bottom:30px; background-color:var(--gray); display:flex; flex-direction:column; align-items:flex-start}
 .sectionH1{padding-top:30px; font-size:1.4em; align-self:flex-start; margin-bottom:15px}
 .flexCards{display:flex; flex-direction:column; flex-wrap:wrap; align-items:flex-start; justify-content:space-around}
 .flexCard{width:90vw; max-width:403px; height:15vh; display:flex}
@@ -167,11 +198,11 @@ header, .sectionH1, .flexCards, .accomodations{margin-left:15px; margin-right:15
 .imgCard3{background-image:url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg)}
 .infoCard{display:flex; justify-content:space-between; width: 300px}
 .cardH2{font-size:1em; margin-bottom:.6em}
-/*.rate{margin-top:10px}*/
+.rate{margin-top:10px}*/
 
 
 /*ACCOMODATIONS IN MARSEILLE*/
-.container4{padding-bottom:30px; display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
+/*.container4{padding-bottom:30px; display:flex; align-items:center; flex-direction:column; flex-wrap:wrap}
 .flexCard2{width:90vw; height:25vh}
 .imgBorder2{border-top-left-radius:20px; border-top-right-radius:20px}
 .imgCardLarge{width:100%}
@@ -181,36 +212,36 @@ header, .sectionH1, .flexCards, .accomodations{margin-left:15px; margin-right:15
 .imgCard7{background-image:url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg)}
 .imgCard8{background-image:url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg)}
 .imgCard9{background-image:url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg)}
-.infoCard2{display:flex; justify-content:space-between; padding-top:5px; border-bottom-left-radius:20px; border-bottom-right-radius:20px}
+.infoCard2{display:flex; justify-content:space-between; padding-top:5px; border-bottom-left-radius:20px; border-bottom-right-radius:20px}*/
 
 /*PHONES*/
-@media screen and (min-width:360px){
-  .cardBackground2{height:150px}
+/*@media screen and (min-width:360px){
+  .cardBackground2{height:150px}*/
 }
 
 /*TABLETS*/
-@media screen and (min-width:400px){
+/*@media screen and (min-width:400px){
   .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1em; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
   .searchIcon{display:none}
   .inputBox{width:350px;}
-  .imgCard3{background-position: bottom}
+  .imgCard3{background-position: bottom}*/
 }
 
-@media screen and (min-width:450px){
-  /*.accomodations{display:flex; flex-direction:column}*/
+/*@media screen and (min-width:450px){
+  .accomodations{display:flex; flex-direction:column}
   .container3{align-items:center}
   .sectionH1{align-self:center}
   .flexCards{align-items:center}
-}
+}*/
 
-@media screen and (min-width:470px){
+/*@media screen and (min-width:470px){
   .cardBackground2{height:200px}
-}
+}*/
 
-@media screen and (min-width:530px){
+/*@media screen and (min-width:530px){
   .container4{flex-direction:row; justify-content:center; width:100vw; margin-left:-15px}
   .flexCard2{width:45vw; height:25vh; justify-content:space-around; margin-right:5px}
-}
+}*/
 
 
 
@@ -221,35 +252,35 @@ header, .sectionH1, .flexCards, .accomodations{margin-left:15px; margin-right:15
   .filterButton{margin-bottom:0}
 }*/
 
-@media screen and (min-width:900px){
+/*@media screen and (min-width:900px){
   .inputBox{align-self:flex-start; margin-left:10px}
-}
+}*/
 
 /*DESKTOP*/
-@media screen and (min-width:1025px){
+/*@media screen and (min-width:1025px){
   body{padding-right:-30px}
   .flexNav li{transition: all 0.5s ease;}
   .flexNav li:hover{background:var(--gray)}
   .flexNav li:first-child{transition: all 0.5s ease;}
-  .flexNav li:first-child:hover{background:var(--lightblue)}
+  .flexNav li:first-child:hover{background:var(--lightblue)}*/
 
   /*trying to use flexbox to organise accomodations and hotels sections together : not very conclusive...*/
   /*.sectionFlex{display:flex; justify-content:space-between}*/
   /*So I'm thinking about using Grid instead.*/
 
   /*let's try that...*/
-  .sectionGrid{display:grid;
+  /*.sectionGrid{display:grid;
     grid-template-columns: 2fr 1fr;
     height:calc(100vh);
     grid-template-areas:
     "accomodations accomodations mostPopular";
-    grid-gap:15px; background-color:red; width:99vw; margin-top:30px; position:relative}
+    grid-gap:15px; background-color:red; width:99vw; margin-top:30px; position:relative}*/
   /*.accomodations{background-color:var(--gray); grid-area:accomodations; border-radius:20px; padding-left:0; margin-left:30px; margin-right:15px}*/
-  .container4{justify-content:space-around; flex-wrap:wrap; width:auto; height:auto; padding-left:0; margin-left:0}
+  /*.container4{justify-content:space-around; flex-wrap:wrap; width:auto; height:auto; padding-left:0; margin-left:0}
   .flexCard{width:100%}
-  .flexCard2{width:200px; margin-right:30px}
+  .flexCard2{width:200px; margin-right:30px}*/
   /*.mostPopular{margin-top:-30px; width:100%}*/
-  .container3{grid-area:mostPopular; border-radius:20px; height:calc(100vh); padding-left:0}
+  /*.container3{grid-area:mostPopular; border-radius:20px; height:calc(100vh); padding-left:0}*/
   /*.mostPopular{order:1; width:32vw; margin-right:auto}
   .container3{border-radius:20px}
   .accomodations{margin-top:30px; margin-left:auto; padding-top:30px; background-color:var(--gray); border-radius:20px}

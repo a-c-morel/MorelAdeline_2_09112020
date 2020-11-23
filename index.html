@@ -16,7 +16,7 @@
             <div class="register"><a href="">S'inscrire</a></div>
             <ul class="flexUl">
                 <li class="whiteBackground"><a href="#accomodations">Hébergements</a></li>
-                <li class="whiteBackground"><a href="activities">Activités</a></li>
+                <li class="whiteBackground"><a href="#activities">Activités</a></li>
             </ul>
         </nav>
 
@@ -76,17 +76,22 @@
 
             <section class="mostPopular">
             
-                <h2>Les plus populaires</h2>
+                <div class="mostPopularTitle">
+                    <h2 class="sectionTitle">Les plus populaires</h2>
+                    <i class="fas fa-chart-line mostPopular_icon"></i>
+                </div>
                 
-                <div class="cardsContainer_MostPopular">
+                <div class="cardsContainer_mostPopular">
     
                     <!--HOTEL "Le soleil du matin" - CARD-->
                     <a href="">
-                        <div class="mostPopular_card">
-                            <div class="imgBorder imgCard imgCard1 mostPopular_cardBackground"></div> <!--div for the card image-->
-                            <div>
-                                <h3>Hôtel Le soleil du matin</h3>
-                                <p>Nuit à partir de 128<span class="bold1">€</span></p>
+                        <div class="mostPopular_card card_border">
+                            <img class="mostPopular_card_img" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Picture of the hotel bedroom">
+                            <div class="card_info">
+                                <div>
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de 128<span class="bold1">€</span></p>
+                                </div>
                                 <div class="rate">
                                     <i class="fas fa-star stars checked"></i>
                                     <i class="fas fa-star stars checked"></i>
@@ -100,11 +105,13 @@
                     
                     <!--HOTEL "Au coeur de l'eau Chambres d'hôtes" - CARD-->                
                     <a href="">
-                        <div class="mostPopular_card">
-                            <div class="imgBorder imgCard imgCard2 mostPopular_cardBackground"></div>
-                            <div>
-                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                                <p>Nuit à partir de 71<span class="bold1">€</span></p>
+                        <div class="mostPopular_card card_border">
+                            <img class="mostPopular_card_img" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Picture of the hotel bedroom">
+                            <div class="card_info">
+                                <div>
+                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de 71<span class="bold1">€</span></p>
+                                </div>
                                 <div class="rate">
                                     <i class="fas fa-star stars checked"></i>
                                     <i class="fas fa-star stars checked"></i>
@@ -118,11 +125,13 @@
                     
                     <!--HOTEL "Tout bleu et Blanc" - CARD--> 
                     <a href="">
-                        <div class="mostPopular_card">
-                            <div class="imgBorder imgCard imgCard3 mostPopular_cardBackground"></div>
-                            <div>
-                                <h3>Hôtel Tout bleu et Blanc</h3>
-                                <p>Nuit à partir de 68<span class="bold1">€</span></p>
+                        <div class="mostPopular_card card_border">
+                            <img class="mostPopular_card_img" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Picture of the hotel bedroom">
+                            <div class="card_info">
+                                <div>
+                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <p>Nuit à partir de 68<span class="bold1">€</span></p>
+                                </div>
                                 <div class="rate">
                                     <i class="fas fa-star stars checked"></i>
                                     <i class="fas fa-star stars checked"></i>
@@ -138,15 +147,15 @@
     
             </section>
     
-            <section class="accomodations">
+            <section class="accomodations" id="accomodations">
     
-                <h2>Hébergements à Marseille</h2>
+                <h2 class="sectionTitle">Hébergements à Marseille</h2>
     
                 <div class="cardsContainer_Accomodations">
     
                     <!--ACCOMODATION "Auberge la Cannebière" - CARD-->
                     <a href="">
-                        <div class="accomodations_card">
+                        <div class="accomodations_card card_border">
                             <div class="imgBorder imgCard imgCard4 accomodations_cardBackground"></div> <!--div for the card image-->
                             <div>
                                 <h3>Auberge la Cannebière</h3>
@@ -164,7 +173,7 @@
                     
                     <!--ACCOMODATION "Hôtel du port" - CARD-->
                     <a href="">
-                        <div class="accomodations_card">
+                        <div class="accomodations_card card_border">
                             <div class="imgBorder imgCard imgCard4 accomodations_cardBackground"></div> <!--div for the card image-->
                             <div>
                                 <h3>Hôtel du port</h3>
@@ -182,7 +191,7 @@
                     
                     <!--ACCOMODATION "Hôtel Les mouettes" - CARD-->
                     <a href="">
-                        <div class="accomodations_card">
+                        <div class="accomodations_card card_border">
                             <div class="imgBorder imgCard imgCard4 accomodations_cardBackground"></div> <!--div for the card image-->
                             <div>
                                 <h3>Hôtel Les mouettes</h3>
@@ -200,7 +209,7 @@
                     
                     <!--ACCOMODATION "Hôtel de la mer" - CARD-->
                     <a href="">
-                        <div class="accomodations_card">
+                        <div class="accomodations_card card_border">
                             <div class="imgBorder imgCard imgCard4 accomodations_cardBackground"></div> <!--div for the card image-->
                             <div>
                                 <h3>Hôtel de la mer</h3>
@@ -218,7 +227,7 @@
                     
                     <!--ACCOMODATION "Hôtel Le Panier" - CARD-->
                     <a href="">
-                        <div class="accomodations_card">
+                        <div class="accomodations_card card_border">
                             <div class="imgBorder imgCard imgCard4 accomodations_cardBackground"></div> <!--div for the card image-->
                             <div>
                                 <h3>Hôtel Le Panier</h3>
@@ -236,7 +245,7 @@
                     
                     <!--ACCOMODATION "Hôtel chez Amina" - CARD-->
                     <a href="">
-                        <div class="accomodations_card">
+                        <div class="accomodations_card card_border">
                             <div class="imgBorder imgCard imgCard4 accomodations_cardBackground"></div> <!--div for the card image-->
                             <div>
                                 <h3>Hôtel chez Amina</h3>
@@ -260,15 +269,15 @@
         </div>
         
 
-        <section class="activities">
+        <section class="activities" id="activities">
 
-            <h2>Activités à Marseille</h2>
+            <h2 class="sectionTitle">Activités à Marseille</h2>
 
             <div class="cardsContainer_Activities">
 
                 <!--ACTIVITY "Vieux Port" - CARD-->
                 <a href="">
-                    <div class="activities_card">
+                    <div class="activities_card card_border">
                         <div class=""></div>
                         <h3>Vieux Port</h3>
                     </div>
@@ -276,7 +285,7 @@
                 
                 <!--ACTIVITY "Fort de Pomègues" - CARD-->
                 <a href="">
-                    <div class="activities_card">
+                    <div class="activities_card card_border">
                         <div class=""></div>
                         <h3>Fort de Pomègues</h3>
                     </div>
@@ -284,7 +293,7 @@
                 
                 <!--ACTIVITY "Îles du Frioul" - CARD-->
                 <a href="">
-                    <div class="activities_card">
+                    <div class="activities_card card_border">
                         <div class=""></div>
                         <h3>Îles du Frioul</h3>
                     </div>
@@ -292,7 +301,7 @@
                 
                 <!--ACTIVITY "Parc National des Calanques" - CARD-->
                 <a href="">
-                    <div class="activities_card">
+                    <div class="activities_card card_border">
                         <div class=""></div>
                         <h3>Parc National des Calanques</h3>
                     </div>
@@ -300,7 +309,7 @@
                 
                 <!--ACTIVITY "Notre-Dame-de-la-Garde" - CARD-->
                 <a href="">
-                    <div class="activities_card">
+                    <div class="activities_card card_border">
                         <div class=""></div>
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
@@ -308,7 +317,7 @@
                 
                 <!--ACTIVITY "Parc Longchamp" - CARD-->
                 <a href="">
-                    <div class="activities_card">
+                    <div class="activities_card card_border">
                         <div class=""></div>
                         <h3>Parc Longchamp</h3>
                     </div>
@@ -494,22 +503,31 @@
 
     <footer>
         <nav>
-            <h2>A propos</h2>
-            <ul>
-                <a href=""><li>Fonctionnement du site</li></a>
-                <a href=""><li>Conditions générales de vente</li></a>
-                <a href=""><li>Données et confidentialité</li></a>
-            </ul>
-            <h2>Nos hébergements</h2>
-            <ul>
-                <a href=""><li>Charte qualité</li></a>
-                <a href=""><li>Soumettre votre hôtel</li></a>
-            </ul>
-            <h2>Assistance</h2>
-            <ul>
-                <a href=""><li>Centre d'aide</li></a>
-                <a href=""><li>Nous contacter</li></a>
-            </ul>
+            <div>
+                <h2>A propos</h2>
+                <ul>
+                    <a href=""><li>Fonctionnement du site</li></a>
+                    <a href=""><li>Conditions générales de vente</li></a>
+                    <a href=""><li>Données et confidentialité</li></a>
+                </ul>
+            </div>
+            
+            <div>
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <a href=""><li>Charte qualité</li></a>
+                    <a href=""><li>Soumettre votre hôtel</li></a>
+                </ul>
+            </div>
+            
+            <div>
+                <h2>Assistance</h2>
+                <ul>
+                    <a href=""><li>Centre d'aide</li></a>
+                    <a href=""><li>Nous contacter</li></a>
+                </ul>
+            </div>
+            
         </nav>
     </footer>
     
