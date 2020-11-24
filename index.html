@@ -13,7 +13,7 @@
     <header>
         <nav>
             <div><a href="index.html"><img src="images/logo/Reservia@3x.png" alt="logo Reservia" class="logo"></a></div>
-            <div class="register"><a href="">S'inscrire</a></div>
+            <div class="register"><a class="boldLink" href="">S'inscrire</a></div>
             <ul class="flexUl">
                 <li class="whiteBackground"><a href="#accomodations">Hébergements</a></li>
                 <li class="whiteBackground"><a href="#activities">Activités</a></li>
@@ -25,6 +25,7 @@
             <p>En plein centre ville ou en pleine nature</p>
         </div>
         
+        <!--I'm thinking about adding a label tag because I read that it was a good practice for accessibility-->
         <form class="inputBox" action="#">
             <i class="fas fa-map-marker-alt placeIcon"></i>
             <input type="text" placeholder="Marseille, France" class="citySelector bold1">
@@ -40,34 +41,11 @@
                 <button class="filterButton marginBottomSmall whiteBackground"><i class="fas fa-child filterIcon"></i>Familial</button>
                 <button class="filterButton marginBottomSmall whiteBackground"><i class="fas fa-heart filterIcon"></i>Romantique</button>
                 <button class="filterButton marginBottomSmall whiteBackground"><i class="fas fa-dog filterIcon"></i>Animaux autorisés</button> 
-            <!--I will turn these buttons into links later-->
             </div>
         </div>
 
         <p class="infoText"><i class="fas fa-info-circle infoIcon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
-
-       <!--<div class="container1 flexCenterWrap">
-            <div><a href="index.html"><img src="images/logo/Reservia@3x.png" alt="logo Reservia" class="logo"></a></div>
-            <div class="register"><a href="">S'inscrire</a></div>
-            <nav class="headerNav">
-                <ul class="flexNav">
-                    <li class="whiteBackground"><a href="#accomodations">Hébergements</a></li>
-                    <li class="whiteBackground"><a href="#">Activités</a></li>
-                </ul>            
-            </nav>
-        </div>
-        <h1 class="headerH1 marginTopLarge marginBottomSmall marginLeft">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2 class="headerH2 marginLeft">En plein centre ville ou en pleine nature</h2>
-        
-        --CITY SELECTOR--
-        <form class="inputBox marginTopLarge" action="#">
-            <i class="fas fa-map-marker-alt placeIcon"></i>
-            <input type="text" placeholder="Marseille, France" class="citySelector bold1">
-            <button type="submit" class="searchText">Rechercher</button>
-            <button type="submit" class="searchIcon"><i class="fas fa-search"></i></button>
-        </form>-->
-   
     </header>
     
     <main>
@@ -275,7 +253,7 @@
                                         
                 </div>
     
-                <a href="">Afficher plus</a>
+                <a class="boldLink" href="">Afficher plus</a>
     
             </section>
         </div>
@@ -285,231 +263,59 @@
 
             <h2 class="sectionTitle">Activités à Marseille</h2>
 
-            <div class="cardsContainer_Activities">
+            <div class="cardsContainer_activities">
 
                 <!--ACTIVITY "Vieux Port" - CARD-->
                 <a href="">
                     <div class="activities_card card_border">
-                        <div class=""></div>
-                        <h3>Vieux Port</h3>
+                        <img class="activities_card_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Picture of the hotel bedroom">
+                        <h3 class="info_card_activities">Vieux Port</h3>
                     </div>
                 </a>
                 
                 <!--ACTIVITY "Fort de Pomègues" - CARD-->
                 <a href="">
                     <div class="activities_card card_border">
-                        <div class=""></div>
-                        <h3>Fort de Pomègues</h3>
+                        <img class="activities_card_img" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Picture of the hotel bedroom">
+                        <h3 class="info_card_activities">Fort de Pomègues</h3>
                     </div>
                 </a>
                 
                 <!--ACTIVITY "Îles du Frioul" - CARD-->
                 <a href="">
                     <div class="activities_card card_border">
-                        <div class=""></div>
-                        <h3>Îles du Frioul</h3>
+                        <img class="activities_card_img" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Picture of the hotel bedroom">
+                        <h3 class="info_card_activities">Îles du Frioul</h3>
                     </div>
                 </a>
                 
                 <!--ACTIVITY "Parc National des Calanques" - CARD-->
                 <a href="">
                     <div class="activities_card card_border">
-                        <div class=""></div>
-                        <h3>Parc National des Calanques</h3>
+                        <img class="activities_card_img" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Picture of the hotel bedroom">
+                        <h3 class="info_card_activities">Parc National des Calanques</h3>
                     </div>
                 </a>
                 
                 <!--ACTIVITY "Notre-Dame-de-la-Garde" - CARD-->
                 <a href="">
                     <div class="activities_card card_border">
-                        <div class=""></div>
-                        <h3>Notre-Dame-de-la-Garde</h3>
+                        <img class="activities_card_img" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Picture of the hotel bedroom">
+                        <h3 class="info_card_activities">Notre-Dame-de-la-Garde</h3>
                     </div>
                 </a>
                 
                 <!--ACTIVITY "Parc Longchamp" - CARD-->
                 <a href="">
                     <div class="activities_card card_border">
-                        <div class=""></div>
-                        <h3>Parc Longchamp</h3>
+                        <img class="activities_card_img" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Picture of the hotel bedroom">
+                        <h3 class="info_card_activities">Parc Longchamp</h3>
                     </div>
                 </a>
 
             </div>
 
         </section>
-
-        <!----MOST POPULAR HOTELS IN MARSEILLE--
-        <div class="sectionFlex sectionGrid">
-            <section class="mostPopular">
-                <div class="container3 marginTopLarge">
-                    <h1 class="sectionH1">Les plus populaires</h1>
-                    <div class="flexCards">
-                        <a href="#" class="clickableCard">
-                            <div class="cards flexCard borderRadius marginBottomSmall whiteBackground">
-                                <div class="imgBorder imgCard imgCard1 cardBackground1"></div>
-                                <div class="flexColumn infoCard marginLeft">
-                                    <div><h2 class="cardH2">Hôtel Le soleil du matin</h2>
-                                        <p>Nuit à partir de 128<span class="bold1">€</span></p>
-                                    </div>
-                                    <div class="rate">
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="clickableCard">
-                            <div class="cards flexCard borderRadius marginBottomSmall whiteBackground">
-                                <div class="imgBorder imgCard imgCard2 cardBackground1"></div>
-                                <div class="flexColumn infoCard marginLeft">
-                                    <div><h2 class="cardH2">Au coeur de l'eau Chambres d'hôtes</h2>
-                                        <p>Nuit à partir de 71<span class="bold1">€</span></p>
-                                    </div>
-                                    <div class="rate">
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars unchecked"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="clickableCard">
-                            <div class="cards flexCard borderRadius marginBottomSmall whiteBackground">
-                                <div class="imgBorder imgCard imgCard3 cardBackground1"></div>
-                                <div class="flexColumn infoCard marginLeft">
-                                    <div><h2 class="cardH2">Hôtel Tout bleu et Blanc</h2>
-                                        <p>Nuit à partir de 68<span class="bold1">€</span></p>
-                                    </div>
-                                    <div class="rate">
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars checked"></i>
-                                        <i class="fas fa-star stars unchecked"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>                                        
-                </div>        
-            </section>
-
-            --ACCOMODATIONS IN MARSEILLE--
-            <section class="accomodations" id="accomodations">
-                <h1 class="sectionH1">Hébergements à Marseille</h1>
-                <div class="container4">
-                    <a href="#" class="clickableCard">
-                        <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
-                            <div class="imgBorder2 imgCardLarge imgCard4 cardBackground2"></div>
-                            <div class="flexColumn infoCard2 marginLeft">
-                                <div><h2 class="cardH2">Auberge la Cannebière</h2>
-                                    <p>Nuit à partir de 25<span class="bold1">€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars unchecked"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickableCard">
-                        <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
-                            <div class="imgBorder2 imgCardLarge imgCard5 cardBackground2"></div>
-                            <div class="flexColumn infoCard2 marginLeft">
-                                <div><h2 class="cardH2">Hôtel du port</h2>
-                                    <p>Nuit à partir de 52<span class="bold1">€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickableCard">
-                        <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
-                            <div class="imgBorder2 imgCardLarge imgCard6 cardBackground2"></div>
-                            <div class="flexColumn infoCard2 marginLeft">
-                                <div><h2 class="cardH2">Hôtel Les mouettes</h2>
-                                    <p>Nuit à partir de 76<span class="bold1">€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars unchecked"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickableCard">
-                        <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
-                            <div class="imgBorder2 imgCardLarge imgCard7 cardBackground2"></div>
-                            <div class="flexColumn infoCard2 marginLeft">
-                                <div><h2 class="cardH2">Hôtel de la mer</h2>
-                                    <p>Nuit à partir de 46<span class="bold1">€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars unchecked"></i>
-                                    <i class="fas fa-star stars unchecked"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickableCard">
-                        <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
-                            <div class="imgBorder2 imgCardLarge imgCard8 cardBackground2"></div>
-                            <div class="flexColumn infoCard2 marginLeft">
-                                <div><h2 class="cardH2">Hôtel Le Panier</h2>
-                                    <p>Nuit à partir de 23<span class="bold1">€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars unchecked"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="clickableCard">
-                        <div class="cards flexCard2 flexColumn borderRadius marginBottomSmall whiteBackground">
-                            <div class="imgBorder2 imgCardLarge imgCard9 cardBackground2"></div>
-                            <div class="flexColumn infoCard2 marginLeft">
-                                <div><h2 class="cardH2">Hôtel chez Amina</h2>
-                                    <p>Nuit à partir de 96<span class="bold1">€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                    <i class="fas fa-star stars checked"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>                    
-                </div>
-                <p>Afficher plus</p>
-            </section>
-        </div>-->
         
     </main>
 
@@ -517,7 +323,7 @@
         <nav>
             <div>
                 <h2>A propos</h2>
-                <ul>
+                <ul class="mobileLineHeight">
                     <a href=""><li>Fonctionnement du site</li></a>
                     <a href=""><li>Conditions générales de vente</li></a>
                     <a href=""><li>Données et confidentialité</li></a>
@@ -526,7 +332,7 @@
             
             <div>
                 <h2>Nos hébergements</h2>
-                <ul>
+                <ul class="mobileLineHeight">
                     <a href=""><li>Charte qualité</li></a>
                     <a href=""><li>Soumettre votre hôtel</li></a>
                 </ul>
@@ -534,7 +340,7 @@
             
             <div>
                 <h2>Assistance</h2>
-                <ul>
+                <ul class="mobileLineHeight">
                     <a href=""><li>Centre d'aide</li></a>
                     <a href=""><li>Nous contacter</li></a>
                 </ul>
@@ -543,9 +349,5 @@
         </nav>
     </footer>
     
-
-<!--A FAIRE:
-- vérifier si je peux trouver des balises sémantiques plus pertinentes
--->
 </body>
 </html>
