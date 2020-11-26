@@ -161,41 +161,7 @@ footer div:last-child{padding-bottom:0}
 }
 
 @media screen and (min-width:1010px){
-  .sectionsGrid{display:grid;
-    grid-template-columns: 2fr 1fr;
-    height:calc(70vh);
-    grid-template-areas:
-    "accomodations accomodations mostPopular";
-    grid-gap:1em; background-color:white; padding-left:1em; padding-right:1em; position:relative}
-    .mostPopular{grid-area:mostPopular; border-radius:20px}
-    .accomodations{grid-area:accomodations; border-radius:20px; background-color:var(--gray)}
-    .cardsContainer_mostPopular{flex-direction:column}
-    .accomodations_card{width:200px}
-    .activities{margin-top:10em}
-}
-
-
-@media screen and (min-width:1040px){
-  .cardsContainer_accomodations{width:60vw} 
-}
-
-@media screen and (min-width:1050px){
-.accomodations{width:660px}
-.activities{margin-top:0}
-.sectionsGrid{height:calc(50vh); width:1050px}
-}
-
-@media screen and (min-width:1200px){
-  .accomodations_card{margin-right:10px}
-}
-
-@media screen and (min-width:1240px){
-  .cardsContainer_accomodations{justify-content:flex-start} 
-}
-
-@media screen and (min-width:1240px){
-  .cardsContainer_accomodations{width:800px} 
-}
-
-
-/*Pb entre 1010 et 1050*/
+  .sectionsFlex{display:flex; justify-content:space-around; flex-direction:row}
+  .mostPopular{width:32vw; order:1; border-radius:20px}
+  .cardsContainer_mostPopular{flex-direction:column}
+  .accomodations{width:62vw; border-radius:20px; background-color:var(--gray)}
