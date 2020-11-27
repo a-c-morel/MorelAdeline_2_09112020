@@ -11,7 +11,7 @@
 
 *,*:before,*:after{box-sizing:border-box; margin:0; padding:0}
 
-body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
+body{height:100vh; font-family:'Raleway', sans-serif} /*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
 
 header, section{padding-top:2em; padding-bottom:2em}
 section{padding-left:1em; padding-right:1em}
@@ -83,7 +83,7 @@ footer div:last-child{padding-bottom:0}
 .accomodations_card_img{height:65%; width:auto; object-fit:cover; border-top-left-radius:20px; border-top-right-radius:20px}
 .accomodations_card_info{margin-left:1em; line-height:1.3em}
 
-.cardsContainer_activities{display:flex; flex-direction:column; ; justify-content:space-around; align-items:flex-start}
+.cardsContainer_activities{display:grid}
 .activities_card{height:180px; width:288px; display:flex; flex-direction:column; margin-bottom:1em; background-color:white; padding-top:.2em; padding-left:.2em; padding-bottom:1em; padding-right:.2em}
 .activities_card_img{height:75%; width:auto; object-fit:cover; border-top-left-radius:20px; border-top-right-radius:20px}
 .info_card_activities{font-size:1em; margin-left:1em; margin-top:1em}
@@ -115,6 +115,11 @@ footer div:last-child{padding-bottom:0}
 @media screen and (min-width:640px){
   .cardsContainer_mostPopular{flex-direction:row; flex-wrap:wrap; justify-content:flex-start}
   .mostPopular_card{height:116px; width:288px; margin-right:10px}
+  .cardsContainer_activities{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap:1em
+  }
 }
 
 @media screen and (min-width:650px){
@@ -160,8 +165,38 @@ footer div:last-child{padding-bottom:0}
   .inputBox{align-self:flex-start; margin-left:10px}
 }
 
+@media screen and (min-width:960px){
+  .cardsContainer_activities{
+    grid-template-columns:repeat(3, 1fr)
+  }
+}
+
 @media screen and (min-width:1010px){
   .sectionsFlex{display:flex; justify-content:space-around; flex-direction:row}
   .mostPopular{width:32vw; order:1; border-radius:20px}
   .cardsContainer_mostPopular{flex-direction:column}
   .accomodations{width:62vw; border-radius:20px; background-color:var(--gray)}
+
+@media screen and (min-width:1280px){
+  .cardsContainer_activities{
+    display:grid;
+    grid-gap:1em;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(8,480px)
+  }
+  .activities_card{background-color:white; padding-bottom:20px; height:480px; padding-top:0; padding-left:0; padding-right:0; width:23vw; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; box-shadow:5px 5px 10px rgb(224, 224, 224)}
+  .activities_card_img1{object-fit:cover; height:100%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
+  .activities_card_img2{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
+  .activities_card_img3{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
+  .activities_card_img4{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
+  .activities_card_img5{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
+  .activities_card_img6{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
+  .grid_card_one{grid-column:1/2; grid-row:1/8}
+  .grid_card_two{grid-column:2/3; grid-row:1/5; height:284px}
+  .grid_card_three{grid-column:2/3; grid-row:5/8; height:164px}
+  .grid_card_four{grid-column:3/4; grid-row:1/8}
+  .grid_card_five{grid-column:4/5; grid-row:1/4}
+  .grid_card_six{grid-column:4/5; grid-row:4/8}
+  
+  }
+}
