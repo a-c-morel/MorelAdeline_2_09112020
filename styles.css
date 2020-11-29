@@ -11,40 +11,42 @@
 
 *,*:before,*:after{box-sizing:border-box; margin:0; padding:0}
 
-body{height:100vh; font-family:'Raleway', sans-serif} /*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
+html{font-size:18px}/*This will allow me to set the margins in rem, and so they will be all the same : 1rem = 18px*/
 
-header, section{padding-top:2em; padding-bottom:2em}
-section{padding-left:1em; padding-right:1em}
+body{/*height:100vh*/ font-family:'Raleway', sans-serif} /*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
+
+header, section{padding-top:2rem; padding-bottom:2rem}
+section{padding-left:1rem; padding-right:1rem}
 .mostPopular, footer{background-color:var(--gray)}
-.logo, .register{margin-bottom:1em}
-nav, h1 ~ p, form, h2 {margin-bottom:1.5em}
+.logo, .register{margin-bottom:1rem}
+nav, h1 ~ p, form, h2 {margin-bottom:1.5rem}
 
-header{display:flex; flex-direction:column; justify-content:space-around; padding-top:2em}
+header{display:flex; flex-direction:column; justify-content:space-around; padding-top:2rem}
 nav{display:flex; justify-content:space-between; flex-wrap:wrap}
-footer{padding-left:1em; padding-right:1em; padding-top:2em; padding-bottom:2em}
-h1{font-size:1.4em}
-h2{font-size:1em}
+footer{padding-left:1rem; padding-right:1rem; padding-top:2rem; padding-bottom:2rem}
+h1{font-size:1.4rem}
+h2{font-size:1rem}
 ul{list-style:none}
 a{text-decoration:none; color:#000000}
 span{font-weight:bold}
 
-.sectionTitle{font-size:1.4em}
+.sectionTitle{font-size:1.4rem}
 .mostPopularTitle{display:flex; justify-content:space-between}
-.mostPopular_icon{margin-top:.4em}
+.mostPopular_icon{margin-top:.4rem}
 
 footer nav{display:flex; flex-direction:column}
-footer div{padding-bottom:2em}
+footer div{padding-bottom:2rem}
 footer div:last-child{padding-bottom:0}
 
-.mobileLineHeight{line-height:1.8em}
+.mobileLineHeight{line-height:1.8rem}
 
 /*LOGO, REGISTER, NAVIGATION*/
-.logo{max-width:100px; height:auto; margin-left:1em; margin-top:-1em} /*margin-left:30px; margin-top:0*/
-.register{margin-right:1em}
+.logo{max-width:100px; height:auto; margin-left:1rem; margin-top:-1rem} /*margin-left:30px; margin-top:0*/
+.register{margin-right:1rem}
 .register a{color:var(--blue)}
 .boldLink{font-weight:bold}
-.title{margin-left:1em; margin-right:1em}
-.infoText{font-size:1em; margin-left:1em; margin-right:1em}
+.title{margin-left:1em; margin-right:1rem}
+.infoText{font-size:1em; margin-left:1rem; margin-right:1rem}
 .flexUl{width:100%; display:flex}
 .flexUl li{border:none; border-bottom:solid var(--gray) 2px; padding:10px; text-align:center; width:50vw}
 .flexUl li:first-child{color:var(--blue); border:none; border-bottom:solid var(--blue) 2px; padding:10px; text-align:center}
@@ -57,12 +59,12 @@ footer div:last-child{padding-bottom:0}
 .searchText{display:none}
 
 /*FILTERS*/
-.filtersContainer{margin-left:1em; display:flex; flex-direction:column}
-.filtersTitle{margin-bottom:.5em}
+.filtersContainer{margin-left:1rem; display:flex; flex-direction:column}
+.filtersTitle{margin-bottom:.5rem}
 .filterButton{border:solid var(--gray) 2px; background-color:#fff; border-radius:25px; padding-right:16px; margin-right:10px; margin-bottom:1em; cursor:pointer}
 .filterIcon{padding:16px; background-color:var(--lightblue); border-radius:25px; margin-right:8px; color:var(--blue)}
 
-.infoText{margin-top:1.5em}
+.infoText{margin-top:1.5rem}
 .infoIcon{background:var(--blue); color:white; border-radius:50px; margin-right:5px}
 
 /*RATING STARS*/
@@ -73,35 +75,35 @@ footer div:last-child{padding-bottom:0}
 /*CARDS*/ /*height:116px; width:288px;*/
 .card_border{border-radius:20px; box-shadow:5px 5px 10px rgb(224, 224, 224)}
 
-.cardsContainer_mostPopular{display:flex; flex-direction:column; ; justify-content:space-around; align-items:flex-start}
-.card_info{display:flex; flex-direction:column; justify-content:space-between; font-size:.8em; margin-top:1em}
-.mostPopular_card{height:116px; width:90vw; display:flex; margin-bottom:1em; background-color:white; padding-top:.2em; padding-left:.2em; padding-bottom:.2em; padding-right:1em}
-.mostPopular_card_img{width:35%; margin-right:1em; height:auto; object-fit:cover; border-top-left-radius:20px; border-bottom-left-radius:20px}
+.mostPopular{width:100%}
+.cardsContainer_mostPopular{display:flex; flex-direction:column; ; justify-content:space-around}
+.card_info{display:flex; flex-direction:column; justify-content:space-between; font-size:.8rem; margin-top:1rem}
+.mostPopular_card{height:12vh; width:90vw; display:flex; margin-bottom:1rem; background-color:white; padding-top:.2rem; padding-left:.2rem; padding-bottom:.2rem; padding-right:1rem}
+.mostPopular_card_img{width:35%; margin-right:1rem; height:auto; object-fit:cover; border-top-left-radius:20px; border-bottom-left-radius:20px}
 
-.cardsContainer_accomodations{display:flex; flex-direction:column; ; justify-content:space-around; align-items:flex-start}
-.accomodations_card{height:180px; width:288px; display:flex; flex-direction:column; margin-bottom:1em; background-color:white; padding-top:.2em; padding-left:.2em; padding-bottom:1em; padding-right:.2em}
-.accomodations_card_img{height:65%; width:auto; object-fit:cover; border-top-left-radius:20px; border-top-right-radius:20px}
-.accomodations_card_info{margin-left:1em; line-height:1.3em}
+.accomodations{width:100%}
+.cardsContainer_accomodations{display:flex; flex-direction:column; ; justify-content:space-around}
+.accomodations_card{height:20vh; width:100%; display:flex; flex-direction:column; margin-bottom:1rem; background-color:white; padding-top:.2rem; padding-left:.2rem; padding-bottom:3rem; padding-right:.2rem}
+.accomodations_card_img{height:65%; width:100%; object-fit:cover; border-top-left-radius:20px; border-top-right-radius:20px}
+.accomodations_card_info{margin-left:1rem; line-height:1.3rem}
 
 .cardsContainer_activities{display:flex; flex-direction:column}/*I let the default align-items because it is on stretched and my cards take the whole width. I will aply it on the other containers of the site later to solve many width issues I have*/
 /*.cardsContainer_activities{display:grid}*/ /*I think here grid makes much more sense but I do not manage to use it well so I will keep flexbox for the moment*/
-.activities_card{height:180px; width:auto; display:flex; flex-direction:column; margin-bottom:1em; background-color:white; padding-top:.2em; padding-left:.2em; padding-bottom:1em; padding-right:.2em}
+.activities_card{height:180px; width:auto; display:flex; flex-direction:column; margin-bottom:1rem; background-color:white; padding-top:.2rem; padding-left:.2rem; padding-bottom:1em; padding-right:.2rem}
 .activities_card_img{height:75%; width:auto; object-fit:cover; border-top-left-radius:20px; border-top-right-radius:20px}
-.info_card_activities{font-size:1em; margin-left:1em; margin-top:1em}
+.info_card_activities{font-size:1rem; margin-left:1rem; margin-top:1rem}
+
+.activities_card_BG1{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg); background-size:cover; background-position:center}
+.activities_card_BG2{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg); background-size:cover; background-position:center}
+.activities_card_BG3{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg); background-size:cover; background-position:center}
+.activities_card_BG4{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg); background-size:cover; background-position:center}
+.activities_card_BG5{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg); background-size:cover; background-position:center}
+.activities_card_BG6{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg); background-size:cover; background-position:center}
 
 @media screen and (min-width:400px){
-  .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1em; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
+  .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1rem; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
   .searchIcon{display:none}
   .inputBox{width:350px;}
-}
-
-@media screen and (min-width:420px){
-  .cardsContainer_accomodations{flex-direction:row; flex-wrap:wrap}
-  .accomodations_card{width:210px}
-}
-
-@media screen and (min-width:452px){
-  .accomodations_card{width:200px}
 }
 
 @media screen and (min-width:480px){
@@ -125,8 +127,8 @@ footer div:last-child{padding-bottom:0}
 
 @media screen and (min-width:650px){
   header{padding-top:0}
-  .logo{padding-top:1.5em}
-  .register{padding-top:21px; margin-right:2em; order:1}
+  .logo{padding-top:1.5rem}
+  .register{padding-top:21px; margin-right:2rem; order:1}
   nav{flex-direction:row; justify-content:flex-end; width:100vw}
   .flexUl{margin-left:auto; width:300px}
   .flexUl li{border:none; padding-top:21px}
@@ -139,7 +141,7 @@ footer div:last-child{padding-bottom:0}
 
 @media screen and (min-width:750px){
   .filtersContainer{display:flex; flex-direction:row; align-items:center}
-  .filtersTitle{margin-bottom:0; margin-right:.5em}
+  .filtersTitle{margin-bottom:0; margin-right:.5rem}
   .filterButton{margin-bottom:0}
   .accomodations_card{height:165px; width:288px}
 }
@@ -148,11 +150,7 @@ footer div:last-child{padding-bottom:0}
   footer nav{flex-direction:row; justify-content:flex-start}
   footer nav div{display:flex; flex-direction:column; margin-right:95px}
   footer div{padding-bottom:0}
-}
-
-@media screen and (min-width:780px){
-  .mostPopular_card{height:116px; width:240px}
-
+  .mostPopular_card{height:15vh; width:240px}
 }
 
 @media screen and (min-width:896px){
@@ -166,11 +164,11 @@ footer div:last-child{padding-bottom:0}
   .inputBox{align-self:flex-start; margin-left:10px}
 }
 
-@media screen and (min-width:960px){
+/*@media screen and (min-width:960px){
   .cardsContainer_activities{
     grid-template-columns:repeat(3, 1fr)
   }
-}
+}*/
 
 @media screen and (min-width:1010px){
   .sectionsFlex{display:flex; justify-content:space-around; flex-direction:row}
@@ -178,21 +176,21 @@ footer div:last-child{padding-bottom:0}
   .cardsContainer_mostPopular{flex-direction:column}
   .accomodations{width:62vw; border-radius:20px; background-color:var(--gray)}
   .cardsContainer_activities{flex-direction:row; flex-wrap:wrap; justify-content:space-around}
-  .activities_card{height:auto; width:auto; display:flex; flex-direction:column; background-color:white; padding-top:0; padding-left:0; padding-right:0}
-  .activities_card_BG1{border-top-left-radius:20px; border-top-right-radius:20px; height:320px; width:15em; background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg); background-size:cover}
-  .activities_card_BG2{border-top-left-radius:20px; border-top-right-radius:20px; height:166px; width:15em; background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg); background-size:cover}
-  .activities_card_BG3{border-top-left-radius:20px; border-top-right-radius:20px; height:86px; width:15em; background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg); background-size:cover}
-  .activities_card_BG4{border-top-left-radius:20px; border-top-right-radius:20px; height:320px; width:15em; background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg); background-size:cover}
-  .activities_card_BG5{border-top-left-radius:20px; border-top-right-radius:20px; height:127px; width:15em; background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg); background-size:cover}
-  .activities_card_BG6{border-top-left-radius:20px; border-top-right-radius:20px; height:127px; width:15em; background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg); background-size:cover}
+  .activities_card{height:auto; width:22vw; display:flex; flex-direction:column; background-color:white; padding-top:0; padding-left:0; padding-right:0}
+  .activities_card_BG1{border-top-left-radius:20px; border-top-right-radius:20px; height:320px; width:22vw; background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg); background-size:cover}
+  .activities_card_BG2{border-top-left-radius:20px; border-top-right-radius:20px; height:166px; width:22vw; background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg); background-size:cover}
+  .activities_card_BG3{border-top-left-radius:20px; border-top-right-radius:20px; height:86px; width:22vw; background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg); background-size:cover}
+  .activities_card_BG4{border-top-left-radius:20px; border-top-right-radius:20px; height:320px; width:22vw; background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg); background-size:cover}
+  .activities_card_BG5{border-top-left-radius:20px; border-top-right-radius:20px; height:127px; width:22vw; background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg); background-size:cover}
+  .activities_card_BG6{border-top-left-radius:20px; border-top-right-radius:20px; height:127px; width:22vw; background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg); background-size:cover}
   .activities_column1{}
   .activities_column2{}
   .activities_column3{}
   .activities_column4{}
 }
 
-@media screen and (min-width:1280px){
-  /*.cardsContainer_activities{
+/*@media screen and (min-width:1280px){
+  .cardsContainer_activities{
     display:grid;
     grid-gap:1em;
     grid-template-columns:repeat(4,1fr);
@@ -210,5 +208,5 @@ footer div:last-child{padding-bottom:0}
   .grid_card_three{grid-column:2/3; grid-row:5/8; height:164px}
   .grid_card_four{grid-column:3/4; grid-row:1/8}
   .grid_card_five{grid-column:4/5; grid-row:1/4}
-  .grid_card_six{grid-column:4/5; grid-row:4/8}*/
-}
+  .grid_card_six{grid-column:4/5; grid-row:4/8}
+}*/
