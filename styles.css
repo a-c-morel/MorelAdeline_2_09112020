@@ -87,18 +87,50 @@ footer div:last-child{padding-bottom:0}
 .accomodations_card_img{height:65%; width:100%; object-fit:cover; border-top-left-radius:20px; border-top-right-radius:20px}
 .accomodations_card_info{margin-left:1rem; line-height:1.3rem}
 
-.cardsContainer_activities{display:flex; flex-direction:column}/*I let the default align-items because it is on stretched and my cards take the whole width. I will aply it on the other containers of the site later to solve many width issues I have*/
-/*.cardsContainer_activities{display:grid}*/ /*I think here grid makes much more sense but I do not manage to use it well so I will keep flexbox for the moment*/
-.activities_card{height:180px; width:auto; display:flex; flex-direction:column; margin-bottom:1rem; background-color:white; padding-top:.2rem; padding-left:.2rem; padding-bottom:1em; padding-right:.2rem}
-.activities_card_img{height:75%; width:auto; object-fit:cover; border-top-left-radius:20px; border-top-right-radius:20px}
-.info_card_activities{font-size:1rem; margin-left:1rem; margin-top:1rem}
+.cardsContainer_activities{
+  padding:1rem;
+  display:flex;
+  flex-direction:column;
+}
 
-.activities_card_BG1{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg); background-size:cover; background-position:center}
-.activities_card_BG2{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg); background-size:cover; background-position:center}
-.activities_card_BG3{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg); background-size:cover; background-position:center}
-.activities_card_BG4{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg); background-size:cover; background-position:center}
-.activities_card_BG5{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg); background-size:cover; background-position:center}
-.activities_card_BG6{border-top-left-radius:20px; width:auto; height:75%; border-top-right-radius:20px; background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg); background-size:cover; background-position:center}
+.activitiesCard{
+  padding:2px;
+  height:200px;
+  border-radius:20px;
+  margin-bottom:.5rem;
+  display:flex;
+  flex-direction:column;
+  box-shadow:5px 5px 10px rgb(224, 224, 224)
+}
+
+.activitiesCardBG{
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  background-size:cover;
+  background-position:center;
+  width:auto;
+  height:75%; 
+}
+
+.activitiesCardBG1{background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)}
+.activitiesCardBG2{background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg)}
+.activitiesCardBG3{background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg)}
+.activitiesCardBG4{background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)}
+.activitiesCardBG5{background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg)}
+.activitiesCardBG6{background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg)}
+
+.activitiesCardH3{font-size:1rem; font-weight:bold; padding:.5rem; border-radius:20px}
+
+@media screen and (min-width:1010px){
+  .cardsContainer_activities{
+    margin:-1rem;
+    flex-direction:row;
+    flex-wrap:wrap;
+ }
+ .activitiesColumn{flex-grow:1; flex-shrink:0; flex-basis:22vw; margin-right:.5rem; display:flex; flex-direction:column}
+ .activitiesColumn:last-child{margin-right:0}
+ .activitiesCard1, .activitiesCard4{flex-grow:1}
+}
 
 @media screen and (min-width:400px){
   .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1rem; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
@@ -175,19 +207,10 @@ footer div:last-child{padding-bottom:0}
   .mostPopular{width:32vw; order:1; border-radius:20px}
   .cardsContainer_mostPopular{flex-direction:column}
   .accomodations{width:62vw; border-radius:20px; background-color:var(--gray)}
-  .cardsContainer_activities{flex-direction:row; flex-wrap:wrap; justify-content:space-around}
-  .activities_card{height:auto; width:22vw; display:flex; flex-direction:column; background-color:white; padding-top:0; padding-left:0; padding-right:0}
-  .activities_card_BG1{border-top-left-radius:20px; border-top-right-radius:20px; height:320px; width:22vw; background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg); background-size:cover}
-  .activities_card_BG2{border-top-left-radius:20px; border-top-right-radius:20px; height:166px; width:22vw; background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg); background-size:cover}
-  .activities_card_BG3{border-top-left-radius:20px; border-top-right-radius:20px; height:86px; width:22vw; background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg); background-size:cover}
-  .activities_card_BG4{border-top-left-radius:20px; border-top-right-radius:20px; height:320px; width:22vw; background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg); background-size:cover}
-  .activities_card_BG5{border-top-left-radius:20px; border-top-right-radius:20px; height:127px; width:22vw; background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg); background-size:cover}
-  .activities_card_BG6{border-top-left-radius:20px; border-top-right-radius:20px; height:127px; width:22vw; background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg); background-size:cover}
-  .activities_column1{}
-  .activities_column2{}
-  .activities_column3{}
-  .activities_column4{}
 }
+
+
+/*ATTENTION PB SUR LES HEIGHT DANS LA PARTIE ACTIVITES POUR LE DESKTOP -> vient du passage à la ligne du texte dans certaines cartes*/
 
 /*@media screen and (min-width:1280px){
   .cardsContainer_activities{
