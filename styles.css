@@ -127,9 +127,12 @@ footer div:last-child{padding-bottom:0}
     flex-direction:row;
     flex-wrap:wrap;
  }
- .activitiesColumn{flex-grow:1; flex-shrink:0; flex-basis:22vw; margin-right:.5rem; display:flex; flex-direction:column}
+ .activitiesColumn{flex-grow:1; flex-shrink:0; flex-basis:22vw; margin-right:1.5rem; display:flex; flex-direction:column}
  .activitiesColumn:last-child{margin-right:0}
  .activitiesCard1, .activitiesCard4{flex-grow:1}
+ .activitiesCard2{min-height:250px; margin-bottom:1.5rem}
+ .activitiesCard5{margin-bottom:1.5rem}
+ .activitiesCard5, .activitiesCard6{flex-grow:1}
 }
 
 @media screen and (min-width:400px){
