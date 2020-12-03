@@ -121,19 +121,6 @@ footer div:last-child{padding-bottom:0}
 
 .activitiesCardH3{font-size:1rem; font-weight:bold; padding:.5rem; border-radius:20px}
 
-@media screen and (min-width:1010px){
-  .cardsContainer_activities{
-    margin:-1rem;
-    flex-direction:row;
-    flex-wrap:wrap;
- }
- .activitiesColumn{flex-grow:1; flex-shrink:0; flex-basis:22vw; margin-right:1.5rem; display:flex; flex-direction:column}
- .activitiesColumn:last-child{margin-right:0}
- .activitiesCard1, .activitiesCard4{flex-grow:1}
- .activitiesCard2{min-height:250px; margin-bottom:1.5rem}
- .activitiesCard5{margin-bottom:1.5rem}
- .activitiesCard5, .activitiesCard6{flex-grow:1}
-}
 
 @media screen and (min-width:400px){
   .searchText{display:block; font-family:'Raleway', sans-serif; font-size:1rem; font-weight:bold; cursor:pointer; border:none; border-top-right-radius:15px; border-bottom-right-radius:15px; background-color:var(--blue); padding:16px; color:white; position:absolute; right:0; top:0}
@@ -143,6 +130,16 @@ footer div:last-child{padding-bottom:0}
 
 @media screen and (min-width:480px){
   .cardsContainer_accomodations{display:flex; flex-direction:row; flex-wrap:wrap}
+}
+
+@media screen and (min-width:490px){
+  .cardsContainer_activities{
+    flex-direction:row;
+    flex-wrap:wrap
+  }
+  .activitiesColumn{display:flex; flex-direction:row; flex-wrap:wrap; flex-grow:1}
+  .activitiesCard{flex-grow:1}
+  .activitiesCard1, .activitiesCard2, .activitiesCard3, .activitiesCard4, .activitiesCard5{margin-right:.5rem}
 }
 
 @media screen and (min-width:500px){
@@ -210,6 +207,17 @@ footer div:last-child{padding-bottom:0}
   .mostPopular{width:32vw; order:1; border-radius:20px}
   .cardsContainer_mostPopular{flex-direction:column}
   .accomodations{width:62vw; border-radius:20px; background-color:var(--gray)}
+  .cardsContainer_activities{
+    margin:-1rem;
+    flex-direction:row;
+    flex-wrap:wrap;
+ }
+ .activitiesColumn{flex-grow:1; flex-shrink:0; flex-basis:22vw; margin-right:1.5rem; display:flex; flex-direction:column}
+ .activitiesColumn:last-child{margin-right:0}
+ .activitiesCard1, .activitiesCard4{flex-grow:1}
+ .activitiesCard2{min-height:250px; margin-bottom:1.5rem}
+ .activitiesCard5{margin-bottom:1.5rem}
+ .activitiesCard5, .activitiesCard6{flex-grow:1}
 }
 
 
