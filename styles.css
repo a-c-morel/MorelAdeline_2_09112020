@@ -11,7 +11,7 @@
 
 *,*:before,*:after{box-sizing:border-box; margin:0; padding:0}
 
-html{font-size:18px}/*This will allow me to set the margins in rem, and so they will be all the same : 1rem = 18px*/
+html{font-size:18px; scroll-behavior: smooth}/*This will allow me to set the margins in rem, and so they will be all the same : 1rem = 18px*/
 
 body{/*height:100vh*/ font-family:'Raleway', sans-serif} /*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
 
@@ -88,7 +88,8 @@ footer div:last-child{padding-bottom:0}
 .accomodations_card_info{margin-left:1rem; line-height:1.3rem; margin-top:.2rem}
 
 .cardsContainer_activities{
-  padding:1rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
   display:flex;
   flex-direction:column;
 }
@@ -178,7 +179,9 @@ footer div:last-child{padding-bottom:0}
   footer nav{flex-direction:row; justify-content:flex-start}
   footer nav div{display:flex; flex-direction:column; margin-right:95px}
   footer div{padding-bottom:0}
-  .mostPopular_card{height:15vh; width:240px}
+  .mostPopular_card{height:130px; width:240px}
+  .card_info{margin-top:0}
+  .accomodations_card_info{margin-top:.2rem}
 }
 
 @media screen and (min-width:896px){
