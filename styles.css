@@ -87,31 +87,12 @@ footer div:last-child{padding-bottom:0}
 .accomodations_card_img{height:85%; width:100%; object-fit:cover; border-top-left-radius:20px; border-top-right-radius:20px}
 .accomodations_card_info{margin-left:1rem; line-height:1.3rem; margin-top:.2rem}
 
-.cardsContainer_activities{
-  padding-top:1rem;
-  padding-bottom:1rem;
-  display:flex;
-  flex-direction:column;
-}
+.cardsContainer_activities{padding-top:1rem; padding-bottom:1rem; display:flex; flex-direction:column}
+.activitiesCard{padding:2px; height:200px; border-radius:20px; margin-bottom:.5rem; display:flex; flex-direction:column; box-shadow:5px 5px 10px rgb(224, 224, 224)}
 
-.activitiesCard{
-  padding:2px;
-  height:200px;
-  border-radius:20px;
-  margin-bottom:.5rem;
-  display:flex;
-  flex-direction:column;
-  box-shadow:5px 5px 10px rgb(224, 224, 224)
-}
+.activitiesCard6{margin-right:.5rem}
 
-.activitiesCardBG{
-  border-top-left-radius:20px;
-  border-top-right-radius:20px;
-  background-size:cover;
-  background-position:center;
-  width:auto;
-  height:75%; 
-}
+.activitiesCardBG{border-top-left-radius:20px; border-top-right-radius:20px; background-size:cover; background-position:center; width:auto; height:100%}
 
 .activitiesCardBG1{background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)}
 .activitiesCardBG2{background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg)}
@@ -203,7 +184,7 @@ footer div:last-child{padding-bottom:0}
   .cardsContainer_mostPopular{flex-direction:column}
   .accomodations{width:62vw; border-radius:20px; background-color:var(--gray)}
   .cardsContainer_activities{
-    margin:-1rem;
+    /*margin:-1rem;*/
     flex-direction:row;
     flex-wrap:wrap;
  }
@@ -214,31 +195,9 @@ footer div:last-child{padding-bottom:0}
  .activitiesCard5{margin-bottom:1.5rem}
  .activitiesCard5, .activitiesCard6{flex-grow:1}
 
- .filterIcon{padding:16px; background-color:var(--lightblue); color:var(--blue); transition:all .1s ease-in}
- .filterIcon:hover{padding:15.2px; background-color:var(--gray); border:1px solid rgb(184, 182, 182); border-radius:25px; margin-right:8px; color:rgb(102, 102, 102)}
+ .filterIcon{background-color:var(--lightblue); color:var(--blue); transition:all .1s ease-in}
+ .filterIcon:hover{/*padding:15.2px;*/ background-color:var(--gray); /*border:1px solid rgb(184, 182, 182);*/ border-radius:25px; margin-right:8px; color:rgb(102, 102, 102)}
+ .flexUl li:hover{background-color:var(--gray)}
 }
 
-
-/*ATTENTION PB SUR LES HEIGHT DANS LA PARTIE ACTIVITES POUR LE DESKTOP -> vient du passage à la ligne du texte dans certaines cartes*/
-
-/*@media screen and (min-width:1280px){
-  .cardsContainer_activities{
-    display:grid;
-    grid-gap:1em;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows:repeat(8,480px)
-  }
-  .activities_card{background-color:white; padding-bottom:20px; height:480px; padding-top:0; padding-left:0; padding-right:0; width:23vw; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; box-shadow:5px 5px 10px rgb(224, 224, 224)}
-  .activities_card_img1{object-fit:cover; height:100%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
-  .activities_card_img2{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
-  .activities_card_img3{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
-  .activities_card_img4{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
-  .activities_card_img5{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
-  .activities_card_img6{object-fit:cover; height:88%; width:23vw; margin:0; border-top-left-radius:20px; border-top-right-radius:20px}
-  .grid_card_one{grid-column:1/2; grid-row:1/8}
-  .grid_card_two{grid-column:2/3; grid-row:1/5; height:284px}
-  .grid_card_three{grid-column:2/3; grid-row:5/8; height:164px}
-  .grid_card_four{grid-column:3/4; grid-row:1/8}
-  .grid_card_five{grid-column:4/5; grid-row:1/4}
-  .grid_card_six{grid-column:4/5; grid-row:4/8}
-}*/
+/*penser à réduire la partie blanche dans les cartes d'activités des colonnes 1 et 3*/
