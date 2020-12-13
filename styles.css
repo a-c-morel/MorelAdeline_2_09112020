@@ -3,6 +3,7 @@
 
 :root {--blue:#0065FC; --gray:#F2F2F2; --lightblue:#DEEBFF} /*using var will allow me to change the colors of all the elements of the page at once if the client changes his mind about the color*/
 
+/*This allows me to chose the color and the police of the text inside the input*/
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1; /* Firefox */
@@ -13,7 +14,7 @@
 
 html{font-size:18px; scroll-behavior: smooth}/*This will allow me to set the margins in rem, and so they will be all the same : 1rem = 18px*/
 
-body{/*height:100vh*/ font-family:'Raleway', sans-serif} /*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
+body{font-family:'Raleway', sans-serif} /*I want to apply this font-family to the whole document, that's why I put it in the body selector*/
 
 header, section{padding-top:2rem; padding-bottom:2rem}
 section{padding-left:1rem; padding-right:1rem}
@@ -41,7 +42,7 @@ footer div:last-child{padding-bottom:0}
 .mobileLineHeight{line-height:1.8rem}
 
 /*LOGO, REGISTER, NAVIGATION*/
-.logo{max-width:100px; height:auto; margin-left:1rem; margin-top:-1rem} /*margin-left:30px; margin-top:0*/
+.logo{max-width:100px; height:auto; margin-left:1rem; margin-top:-1rem}
 .register{margin-right:1rem}
 .register a{color:var(--blue)}
 .boldLink{font-weight:bold}
@@ -72,13 +73,13 @@ footer div:last-child{padding-bottom:0}
 .checked{color:var(--blue)}
 .unchecked{color:#c9c9c9}
 
-/*CARDS*/ /*height:116px; width:288px;*/
+/*CARDS*/
 .card_border{border-radius:20px; box-shadow:5px 5px 10px rgb(224, 224, 224)}
 
 .mostPopular{width:100%}
 .cardsContainer_mostPopular{display:flex; flex-direction:column; ; justify-content:space-around}
 .card_info{display:flex; flex-direction:column; justify-content:space-between; font-size:.8rem; margin-top:1rem}
-.mostPopular_card{height:130px; /*width:90vw;*/ display:flex; margin-bottom:1rem; background-color:white; padding-top:.2rem; padding-left:.2rem; padding-bottom:.2rem; padding-right:1rem}
+.mostPopular_card{height:130px; display:flex; margin-bottom:1rem; background-color:white; padding-top:.2rem; padding-left:.2rem; padding-bottom:.2rem; padding-right:1rem}
 .mostPopular_card_img{width:35%; margin-right:1rem; height:auto; object-fit:cover; border-top-left-radius:20px; border-bottom-left-radius:20px}
 
 .accomodations{width:100%}
@@ -138,7 +139,7 @@ footer div:last-child{padding-bottom:0}
   header{padding-top:0}
   .logo{padding-top:1.5rem}
   .register{padding-top:21px; margin-right:2rem; order:1}
-  nav{flex-direction:row; justify-content:flex-end; /*width:100vw*/}
+  nav{flex-direction:row; justify-content:flex-end}
   .flexUl{margin-left:auto; width:300px}
   .flexUl li{border:none; padding-top:21px}
   .flexUl li:first-child{border:none; border-top:solid var(--blue) 2px; padding-top:19px}
@@ -183,21 +184,15 @@ footer div:last-child{padding-bottom:0}
   .mostPopular{width:32vw; order:1; border-radius:20px}
   .cardsContainer_mostPopular{flex-direction:column}
   .accomodations{width:62vw; border-radius:20px; background-color:var(--gray)}
-  .cardsContainer_activities{
-    /*margin:-1rem;*/
-    flex-direction:row;
-    flex-wrap:wrap;
- }
- .activitiesColumn{flex-grow:1; flex-shrink:0; flex-basis:22vw; margin-right:1.5rem; display:flex; flex-direction:column}
- .activitiesColumn:last-child{margin-right:0}
- .activitiesCard1, .activitiesCard4{flex-grow:1}
- .activitiesCard2{min-height:250px; margin-bottom:1.5rem}
- .activitiesCard5{margin-bottom:1.5rem}
- .activitiesCard5, .activitiesCard6{flex-grow:1}
+  .cardsContainer_activities{flex-direction:row; flex-wrap:wrap;}
+  .activitiesColumn{flex-grow:1; flex-shrink:0; flex-basis:22vw; margin-right:1.5rem; display:flex; flex-direction:column}
+  .activitiesColumn:last-child{margin-right:0}
+  .activitiesCard1, .activitiesCard4{flex-grow:1}
+  .activitiesCard2{min-height:250px; margin-bottom:1.5rem}
+  .activitiesCard5{margin-bottom:1.5rem}
+  .activitiesCard5, .activitiesCard6{flex-grow:1}
 
  .filterIcon{background-color:var(--lightblue); color:var(--blue); transition:all .1s ease-in}
- .filterIcon:hover{/*padding:15.2px;*/ background-color:var(--gray); /*border:1px solid rgb(184, 182, 182);*/ border-radius:25px; margin-right:8px; color:rgb(102, 102, 102)}
+ .filterIcon:hover{background-color:var(--gray); border-radius:25px; margin-right:8px; color:rgb(102, 102, 102)}
  .flexUl li:hover{background-color:var(--gray)}
 }
-
-/*penser à réduire la partie blanche dans les cartes d'activités des colonnes 1 et 3*/
